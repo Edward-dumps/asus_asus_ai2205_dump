@@ -1,0 +1,10 @@
+#line 1 "vendor/ims/sepolicy/service_contexts"
+miscsetup                                 u:object_r:miscsetup_service:s0
+optiflex                                  u:object_r:optiflex_service:s0
+RepublicOfGamersService                   u:object_r:rog_service:s0
+asus_freezer                              u:object_r:asus_freezer_service:s0
+asus_game_mode                            u:object_r:asus_game_mode_service:s0
+tcprocess                                 u:object_r:tcprocess_service:s0
+CTA_SERVICE                               u:object_r:cta_service:s0
+auralight                                 u:object_r:auralight_service:s0
+asus_sleep_mode                           u:object_r:asus_sleep_mode_service:s0

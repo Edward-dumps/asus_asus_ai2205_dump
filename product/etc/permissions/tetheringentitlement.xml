@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<permissions>
+    <privapp-permissions package="com.google.android.tetheringentitlement">
+        <!-- Required to bypass private DNS settings and use carrier's DNS instead. -->
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
+        <!-- Required to change tether state, for Android 10 or earlier.-->
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <!-- Required to get phone number, IMSI and ICCID. -->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <!-- Required to change tether state, for Android 11 or later. -->
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+        <!-- Required to read the APN settings. -->
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+    </privapp-permissions>
+</permissions>
