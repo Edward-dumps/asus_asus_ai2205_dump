@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!-- EAP Method
+	NONE  		= -1;
+	PEAP    	= 0;
+	TLS     	= 1;
+	TTLS    	= 2;
+	PWD     	= 3;
+	SIM     	= 4;
+	AKA     	= 5;
+	AKA_PRIME 	= 6;
+	UNAUTH_TLS 	= 7;
+	WAPI_CERT 	= 8;
+ -->
+ <!-- Forget Policy
+	0 = forget
+	1 = diable network
+ -->
+<WifiConfigStoreData>
+	<int name="Version" value="1" />
+	<OperatorNetworkList>
+		<OperatorNetwork>
+			<WifiOperatorConfig>
+				<string-array name="MCCMNC" num="2">
+					<item value="52501"></item>
+					<item value="52502"></item>
+				</string-array>
+				<string name="SSID">&quot;Singtel WIFI&quot;</string>
+				<int name="EAPMethod" value="4"/>
+				<boolean name="RemovedBySIM" value="true"/>
+				<int name="ForgetPolicy" value="1"/>
+			</WifiOperatorConfig>
+		</OperatorNetwork>
+		<OperatorNetwork>
+			<WifiOperatorConfig>
+				<string-array name="MCCMNC" num="1">
+					<item value="52503"></item>
+				</string-array>
+				<string name="SSID">&quot;M1&quot;</string>
+				<int name="EAPMethod" value="4"/>
+				<boolean name="RemovedBySIM" value="true"/>
+				<int name="ForgetPolicy" value="1"/>
+			</WifiOperatorConfig>
+		</OperatorNetwork>
+		<OperatorNetwork>
+			<WifiOperatorConfig>
+				<string-array name="MCCMNC" num="1">
+					<item value="44011"></item>
+				</string-array>
+				<string name="SSID">&quot;0000Rakuten&quot;</string>
+				<int name="EAPMethod" value="5"/>
+				<boolean name="RemovedBySIM" value="true"/>
+				<int name="ForgetPolicy" value="1"/>
+			</WifiOperatorConfig>
+		</OperatorNetwork>
+		<OperatorNetwork>
+			<WifiOperatorConfig>
+				<string-array name="MCCMNC" num="1">
+					<item value="52003"></item>
+					<item value="52001"></item>
+				</string-array>
+				<string name="SSID">&quot;  AIS SMART Login&quot;</string>
+				<int name="EAPMethod" value="4"/>
+				<boolean name="RemovedBySIM" value="true"/>
+				<int name="ForgetPolicy" value="1"/>
+			</WifiOperatorConfig>
+		</OperatorNetwork>
+	</OperatorNetworkList>
+</WifiConfigStoreData>
