@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fz_policy>
+
+<version number="4"/>
+
+<pkg_policy name="w_app"   type="wb_app" enabled="1" priority="1000" net="0" alarm="0" freeze="0"/>
+<pkg_policy name="b_app"   type="wb_app" enabled="1" priority="1000" net="1" alarm="1" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="w_app_net"   type="wb_app" priority="1000" net="0"/>
+<pkg_policy name="b_app_net"   type="wb_app" priority="1000" net="1"/>
+<pkg_policy name="w_app_alarm" type="wb_app" priority="1000" alarm="0"/>
+<pkg_policy name="b_app_alarm" type="wb_app" priority="1000" alarm="1"/>
+<pkg_policy name="w_app_fz"    type="wb_app" enabled="1" priority="1000" freeze="0"/>
+<pkg_policy name="b_app_fz"    type="wb_app" enabled="1" priority="1000" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="gms_app" type="wb_app" enabled="1" priority="2000" freeze="0"/>
+
+<pkg_policy name="visible_app" type="runtime_app" enabled="1" priority="2000" freeze="0"/>
+
+<!-- cat="all" , means not freeze when event occurs -->
+<pkg_policy name="is_audio" cat="all,music,video" cat_skip="map" type="event" enabled="1" priority="100000" freeze="0"/>
+<pkg_policy name="is_gps" cat="map"                          type="event" enabled="1" priority="100000" freeze="0"/>
+<pkg_policy name="is_sensor" cat="health"                    type="event" enabled="1" priority="100000" freeze="0"/>
+<pkg_policy name="is_on_calling" cat="all,social"            type="event" enabled="1" priority="100000" freeze="0"/>
+<pkg_policy name="is_vpn" cat="all,vpn"                      type="event" enabled="1" priority="100000" freeze="0"/>
+<pkg_policy name="is_downloading" cat="app_store,downloader,cloud_disk,game" type="event" enabled="1" priority="100000" freeze="0"/>
+
+<pkg_policy name="music"      type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="video"      type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="game"       type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="game_acc"   type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="map"        type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="map2"       type="category" enabled="1" priority="999999" freeze="0"/>
+<pkg_policy name="health"     type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="vpn"        type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="app_store"  type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="downloader" type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="cloud_disk" type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+<pkg_policy name="mail_box"   type="category" enabled="1" priority="999999" freeze="0"/>
+<pkg_policy name="social"     type="category" enabled="1" priority="999999" freeze="0"/>
+<pkg_policy name="tool"       type="category" enabled="1" priority="999999" freeze="1" duration="-1" wait_time="10"/>
+
+<pkg_policy name="default" type="default" enabled="1" priority="1000000" freeze="1" duration="-1" wait_time="10"/>
+
+</fz_policy>

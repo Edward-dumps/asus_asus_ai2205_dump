@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fz_wb_app>
+
+<version number="2"/>
+
+<!-- white app sample -->
+<!-- <wb_app type="w_app" name="com.android.settings"/> -->
+
+<!-- need sort by name -->
+<!-- prefix com. -->
+    <wb_app name="com.alibaba.android.rimet" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.alibaba.mobileim" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.android.vending" type="gms_app,w_app_adaptivebucket"/>
+    <wb_app name="com.asus.calculator" type="w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="com.asus.cnmusic" type="w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="com.asus.cnredpacket" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="com.asus.debugger" type="w_app_net,w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="com.asus.syncv2" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="com.asus.weathertime" type="w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="com.eg.android.AlipayGphone" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="com.facebook.katana" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.facebook.orca" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.github.uiautomator.test" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="com.github.uiautomator" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="com.google.android.apps.messaging" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.immomo.momo" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.instagram.android" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.jingdong.app.mall" type="w_app_fz,w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="com.kakao.talk" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.microsoft.office.lync15" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.mplusapp" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.p1.mobile.putong" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.perfdog.app" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="com.qq.qcloud" type="w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="com.sina.weibo" type="w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="com.skype.android.access" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.skype.android.qik" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.skype.raider" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.skype.rover" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.taobao.idlefish" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="com.teamviewer.quicksupport.market" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="com.teamviewer.teamviewer.market.mobile" type="w_app_fz,w_app_adaptivebucket"/>
+
+    <wb_app name="com.tencent.mm" type="w_app"/>
+    <wb_app name="com.tencent.mobileqq" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.tencent.mobileqqi" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.tencent.qqgame.xq" type="b_app"/>
+    <wb_app name="com.tencent.qqlite" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.tencent.qqlive" type="b_app"/>
+    <wb_app name="com.tencent.qqmusic" type="w_app_fz,w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="com.tencent.tim" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.tencent.wework" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.termux" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="com.whatsapp" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.xiaomi.channel" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="com.xunmeng.pinduoduo" type="b_app_alarm"/>
+
+    <!-- prefix Other -->
+    <wb_app name="android.alarmmanager.alarmtestapp.cts" type="w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="android.alarmmanager.cts" type="w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="android.os.cts.batterysaving.app_target_api_current" type="w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="android.os.cts.batterysaving.app_target_api_25" type="w_app_alarm,w_app_adaptivebucket"/>
+    <wb_app name="ccc71.bmw" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="cn.com.sina.finance" type="w_app_fz,w_app_adaptivebucket"/>
+    <wb_app name="im.yixin" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="jp.naver.line.android" type="w_app_net,w_app_adaptivebucket"/>
+    <wb_app name="org.telegram.messenger" type="w_app_net,w_app_adaptivebucket"/>
+
+    <!-- for alarm start -->
+    <alarm_var name="alarm_pending_state" value="1"/>
+    <alarm_var name="alarm_align_state" value="1"/>
+
+    <alarm_align_prefix name="com.tencent.android.tpush" />
+    <alarm_align_prefix name="com.baidu.android.pushservice" />
+    <alarm_align_prefix name="com.baidu.sapi2.share" />
+    <alarm_align_prefix name="com.alibaba.sdk.android.push" />
+    <alarm_align_prefix name="org.android.agoo.accs" />
+    <alarm_align_prefix name="com.taobao.accs" />
+    <alarm_align_prefix name="com.taobao.agoo" />
+    <alarm_align_prefix name="cn.jpush.android.service" />
+    <alarm_align_prefix name="com.igexin.dowload" />
+    <alarm_align_prefix name="com.igexin.getuiext" />
+    <alarm_align_prefix name="com.igexin.sdk" />
+    <alarm_align_prefix name="com.umeng.message" />
+    <alarm_align_prefix name="com.umeng.update.net" />
+    <alarm_align_prefix name="com.xiaomi.push" />
+    <alarm_align_prefix name="com.dianping.base.push" />
+    <alarm_align_prefix name="com.sohu.push" />
+    <alarm_align_prefix name="com.ss.android.message.sswo" />
+    <alarm_align_prefix name="com.ss.android.lockscreen" />
+    <alarm_align_prefix name="com.yy.pushsvc" />
+    <!-- for alarm end -->
+</fz_wb_app>

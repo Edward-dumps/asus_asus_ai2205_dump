@@ -1,0 +1,14 @@
+service AsusRouteMonitor /system/bin/AsusRouteMonitor
+    class main
+    user root
+    group root
+    seclabel u:r:AsusRouteMonitor:s0
+
+on property:sys.boot_completed=1
+    start AsusRouteMonitor
+
+on property:sys.asus.route_monitor=1
+    restart AsusRouteMonitor
+
+on property:sys.asus.route_monitor=0
+    stop AsusRouteMonitor

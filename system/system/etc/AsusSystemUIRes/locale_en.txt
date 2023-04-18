@@ -1,0 +1,8 @@
+﻿[{"wallpaper":"default_slideshow_wallpaper01","title":"Space sailing","description":"Travel through the vast universe, moving towards the past and future of the human world.","author":""},
+{"wallpaper":"default_slideshow_wallpaper02","title":"Neon Space​​","description":"Flashing neon lights traveling through sci-fi space.","author":""},
+{"wallpaper":"default_slideshow_wallpaper03","title":"Futuristic Vision​","description":"The future is already here – it's just not very popular yet.​","author":""},
+{"wallpaper":"default_slideshow_wallpaper04","title":"Cyber Circuit","description":"In a different dimension, every circuit transmits information beyond the speed of light.","author":""},
+{"wallpaper":"default_slideshow_wallpaper05","title":"Abstract Phantom","description":"Mixing and matching abstract colors from futuristic technology to create a visual feast.","author":""},
+{"wallpaper":"default_slideshow_wallpaper06","title":"Cyber ​​Planet","description":"Cyberpunk lights are like stars in this human-made universe.","author":""},
+{"wallpaper":"default_slideshow_wallpaper07","title":"Surreal Lights & Shadows","description":"A turbulent soul highlights its cyberpunk magical colors.​","author":""},
+{"wallpaper":"default_slideshow_wallpaper08","title":"Artificial Star​","description":"Humans imitate the stars in the universe, injecting sparkling lights into the endless night.​","author":""}]

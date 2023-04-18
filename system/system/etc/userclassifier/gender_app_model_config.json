@@ -1,0 +1,1 @@
+{"input_node":["country_3", "app_3"],"output_node": "output_3/Softmax","input_size":[1, 1080],"origin_pb":"tensorflow_model-1546917796100.pb","origin_app_token":"tokenizer-1546916527474.json","origin_country_token":"ac_tokenizer-1546916529430.json"}

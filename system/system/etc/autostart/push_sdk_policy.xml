@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policy>
+    <component name="cn.jpush.android.service" prefix="true" />
+    <component name="com.baidu.android.pushservice" prefix="true" />
+    <component name="com.baidu.sapi2.share" prefix="true" />
+    <component name="com.dianping.base.push" prefix="true" />
+    <component name="com.igexin.dowload" prefix="true" />
+    <component name="com.igexin.getuiext" prefix="true" />
+    <component name="com.igexin.sdk" prefix="true" />
+    <component name="com.sohu.push" prefix="true" />
+    <component name="com.ss.android.lockscreen" prefix="true" />
+    <component name="com.ss.android.message.sswo" prefix="true" />
+    <component name="com.taobao.accs" prefix="true" />
+    <component name="com.taobao.agoo" prefix="true" />
+    <component name="com.tencent.android.tpush" prefix="true" />
+    <component name="com.umeng.message" prefix="true" />
+    <component name="com.umeng.update.net" prefix="true" />
+    <component name="com.xiaomi.push" prefix="true" />
+    <component name="com.yy.pushsvc" prefix="true" />
+    <component name="org.android.agoo.accs" prefix="true" />
+</policy>

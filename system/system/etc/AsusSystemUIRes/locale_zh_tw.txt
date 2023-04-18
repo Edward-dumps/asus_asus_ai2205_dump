@@ -1,0 +1,8 @@
+﻿[{"wallpaper":"default_slideshow_wallpaper01","title":"馳騁太空​","description":"穿梭浩瀚宇宙，馳騁人類世界的過去和未來。​","author":""},
+{"wallpaper":"default_slideshow_wallpaper02","title":"霓虹空間​","description":"閃爍的霓虹燈，穿梭科幻空間。​","author":""},
+{"wallpaper":"default_slideshow_wallpaper03","title":"未來幻象","description":"未來已經來臨，只是尚未流行。","author":""},
+{"wallpaper":"default_slideshow_wallpaper04","title":"賽博電路​","description":"在異次元空間，每塊電路超越光速傳遞訊息。","author":""},
+{"wallpaper":"default_slideshow_wallpaper05","title":"抽象幻影​","description":"混搭未來科技的抽象色彩，演繹一場視覺盛宴。","author":""},
+{"wallpaper":"default_slideshow_wallpaper06","title":"賽博星球​","description":"賽博朋克發光體，是人類複製宇宙中的恒星。","author":""},
+{"wallpaper":"default_slideshow_wallpaper07","title":"超現實光影","description":"動盪的靈魂，勾勒出賽博龐克的魔幻色彩。","author":""},
+{"wallpaper":"default_slideshow_wallpaper08","title":"人造恒星","description":"人類複製宇宙中的恒星，為無盡的黑夜注入閃亮的光芒。","author":""}]

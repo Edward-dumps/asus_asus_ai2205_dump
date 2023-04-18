@@ -1,0 +1,106 @@
+on post-fs-data
+    mkdir /data/logcat_log
+    mkdir /data/bootup
+    restorecon_recursive /data/logcat_log
+    restorecon_recursive /data/bootup
+    chown system system /data/logcat_log
+    chown system system /data/bootup
+    chmod 0777 /data/logcat_log
+    chmod 0777 /data/bootup
+
+#ASUS DEBUG: for savelog services
+on property:vendor.logd.qxdmlog.enable=1
+    setprop persist.logd.qxdmlog.enable 1
+
+on property:vendor.logd.qxdmlog.enable=0
+    setprop persist.logd.qxdmlog.enable 0
+
+#ASUS DEBUG: logcat Services to /logcat_log +++
+service logcat-kernel /system/bin/logcat -r 10000 -b kernel -n ${persist.vendor.asus.logcat.filenum:-20} -v threadtime -v printable -f /data/logcat_log/kernel.log
+    class late_start
+    user root
+    group root
+    disabled
+    seclabel u:r:dumpstate:s0
+
+service logcat-radio /system/bin/logcat -r 10000 -b radio -n ${persist.vendor.asus.logcat.filenum:-10} -v time -f /data/logcat_log/logcat-radio.txt
+    class late_start
+    user root
+    group root
+    disabled
+    seclabel u:r:dumpstate:s0
+
+service logcat-events /system/bin/logcat -r 10000 -b events -n ${persist.vendor.asus.logcat.filenum:-10} -v threadtime -f /data/logcat_log/logcat-events.txt
+    class late_start
+    user root
+    group root
+    disabled
+    seclabel u:r:dumpstate:s0
+
+service logcat /system/bin/logcat -b main -b system -b crash -n ${persist.vendor.asus.logcat.filenum:-20} -r 10000 -v threadtime TcpSocketLog:S -f /data/logcat_log/logcat.txt
+    class late_start
+    user root
+    group root
+    disabled
+    seclabel u:r:dumpstate:s0
+
+service logcat-net /system/bin/logcat -r 10000 -b main -s TcpSocketMonitor TcpSocketLog -n 3 -v threadtime -f /data/logcat_log/logcat-net.txt
+    class late_start
+    user root
+    group root
+    disabled
+    seclabel u:r:dumpstate:s0
+#ASUS DEBUG: logcat Services to /logcat_log ---
+
+service check-datalog /system/bin/sh /system/bin/init.asus.checkdatalog.sh
+    class main
+    user root 
+    group system
+    oneshot
+    seclabel u:r:dumpstate:s0
+
+# ASUSLogTool save log
+service savelogmtp_sys /system/bin/sh /system/bin/savelogmtp_sys.sh
+    class late_start
+    user root
+    group root system media_rw
+    oneshot
+    disabled
+    seclabel u:r:dumpstate:s0
+
+service log_mover /system/bin/sh /system/bin/log_mover.sh
+    class late_start
+    user root
+    group root system media_rw
+    oneshot
+    disabled
+    seclabel u:r:dumpstate:s0
+
+# UTS services
+service savelogs /system/bin/sh /system/bin/savelogs.sh
+    class late_start
+    user root
+    group root system media_rw sdcard_rw
+    oneshot
+    disabled
+    seclabel u:r:dumpstate:s0
+
+on property:vendor.asus.capturedump=1
+    start capture_dump
+
+service capture_dump /system/bin/sh /system/bin/capture_dump.sh
+    class late_start
+    user root
+    group root system media_rw
+    oneshot
+    disabled
+    seclabel u:r:dumpstate:s0
+
+# ASUSLogTool clear log
+service cscclearlog_sys /system/bin/sh /system/bin/cscclearlog_sys.sh
+    class late_start
+    user root
+    group root system media_rw
+    oneshot
+    disabled
+    seclabel u:r:dumpstate:s0

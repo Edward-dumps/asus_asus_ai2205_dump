@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <feature name="asus.software.soundrecorder.v50" />
+
+    <privapp-permissions package="com.asus.soundrecorder">
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+</permissions>

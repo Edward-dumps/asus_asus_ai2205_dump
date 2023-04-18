@@ -1,0 +1,246 @@
+{
+	"displayname":"Performance",
+	"configurations": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x48000000",
+					"value":"7",
+					"valueset": [
+					  "0","3","4","5","6"
+					]
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/sys/devices/system/cpu/cpu3/core_ctl/min_cpus",
+					"code":"0x41000000",
+					"value":"4",
+					"valueset": [
+						"4", "3", "2", "1"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_load",
+					"code":"0x41440100",
+					"value":"50",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq",
+					"code":"0x4143C100",
+					"value":"2016",
+					"valueset": [
+						"1363", "1574", "1785"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_load",
+					"code":"0x41440000",
+					"value":"50",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq",
+					"code":"0x4143C000",
+					"value":"2803",
+					"valueset": [
+						"1881", "2112", "2496"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_load",
+					"code":"0x41440200",
+					"value":"50",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_freq",
+					"code":"0x4143C200",
+					"value":"3187",
+					"valueset": [
+						"2284", "2630", "2995"
+					]
+				}
+			]
+		},
+		{
+			"category":"GPU",
+			"items": [
+				{
+					"name":"/sys/class/kgsl/kgsl-3d0/idle_timer",
+					"code":"0X4282C000",
+					"value":"10000",
+					"valueset": [
+						"80","500","1000","2500","5000","10000"
+					]
+				}
+			]
+		},
+		{
+			"category":"Scheduler",
+			"items": [
+				{
+					"name":"/proc/sys/walt/sched_upmigrate & sched_downmigrate (Silver-Gold)",
+					"code":"0x40CE0000",
+					"value":"3932200",
+					"valueset": [
+						"0x003C0028"
+					]
+				},
+				{
+					"name":"/proc/sys/walt/sched_upmigrate & sched_downmigrate (Gold-Prime)",
+					"code":"0x40CE0200",
+					"value":"3932200",
+					"valueset": [
+						"0x003C0028"
+					]
+				},
+				{
+					"name":"/proc/sys/walt/sched_group_upmigrate & downmigrate",
+					"code":"0x40CF4000",
+					"value":"3932200",
+					"valueset": [
+						"0x003C0028"
+					]
+				}
+			]
+		},
+		{
+			"category":"IO",
+			"items": [
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/LLCC/240b6400.qcom,bwmon-llcc/min_freq",
+					"code":"0x41844000",
+					"value":"806000",
+					"valueset": [
+						"300000","466000","600000","806000"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/LLCC/240b6400.qcom,bwmon-llcc/io_percent",
+					"code":"0x41834000",
+					"value":"10",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/DDR/24091000.qcom,bwmon-ddr/min_freq",
+					"code":"0x4303C000",
+					"value":"2736000",
+					"valueset": [
+						"547000", "768000", "1555000", "1708000", "2092000"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/DDR/19091000.qcom,bwmon-ddr/io_percent",
+					"code":"0x43020000",
+					"value":"10",
+					"valueset": [
+						"90","80","70","60","50","40","30","20","10"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:l3:silver/min_freq",
+					"code":"0x43400000",
+					"value":"1804800",
+					"valueset": [
+						"307200","422400","633600","729600","921600","1094400","1267200","1459200","1555200","1651200"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:l3:silver/ipm_ceil",
+					"code":"0x43404000",
+					"value":"16000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/L3/soc:qcom,memlat:l3:gold/ipm_ceil",
+					"code":"0x43408000",
+					"value":"16000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/LLCC/soc:qcom,memlat:llcc:silver/min_freq",
+					"code":"0x4345C000",
+					"value":"600000",
+					"valueset": [
+					  "300000","466000","600000"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/LLCC/soc:qcom,memlat:llcc:silver/ipm_ceil",
+					"code":"0x43420000",
+					"value":"16000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/LLCC/soc:qcom,memlat:llcc:gold/ipm_ceil",
+					"code":"0x43424000",
+					"value":"16000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/DDR/soc:qcom,memlat:ddr:silver/min_freq",
+					"code":"0x43460000",
+					"value":"1555000",
+					"valueset": [
+					  "547000", "768000", "1555000"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/DDR/soc:qcom,memlat:ddr:silver/ipm_ceil",
+					"code":"0x43434000",
+					"value":"16000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/bus_dcvs/DDR/soc:qcom,memlat:ddr:gold/ipm_ceil",
+					"code":"0x43438000",
+					"value":"16000",
+					"valueset": [
+						"400","1000","2000","4000","8000","16000"
+					]
+				},
+				{
+					"name":"/sys/class/devfreq/1d84000.ufshc/governor",
+					"code":"0x42C38000",
+					"value":"1",
+					"valueset": [
+						"0","1"
+					]
+				},
+				{
+					"name":"/sys/class/block/sda/queue/read_ahead_kb",
+					"code":"0x42008000",
+					"value":"0",
+					"valueset": [
+						"0", "256", "512", "1024", "2048"
+					]
+				}
+			]
+		}
+	]
+}

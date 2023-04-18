@@ -1,0 +1,19 @@
+service AsusFocusService /system/bin/AsusFocusService
+    class main
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel u:r:AsusFocusService:s0
+
+on property:persist.vendor.asus.focus_mode=*
+    restart AsusFocusService
+
+on property:vendor.asus.gamingtype=*
+    restart AsusFocusService
+
+on property:vendor.asus.storm_vpn=*
+    restart AsusFocusService
+
+on property:vendor.asus.focus_uid=*
+    restart AsusFocusService

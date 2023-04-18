@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <job_id>90063</job_id>
+  <config_version>2</config_version>
+  <string-array name="hidden_system_packages">
+    <item>com.google.android.apps.setupwizard.searchselector</item>
+    <item>com.monotype.android.font.mfinancehkbold</item>
+    <item>com.monotype.android.font.myinghei18030m</item>
+    <item>com.monotype.android.font.myuppymediumtc</item>
+    <item>com.square_enix.WOTVffbejp</item>
+    <item>jp.co.daj.consumer.ifilter.aflauncher</item>
+    <item>jp.co.koeitecmo.Might</item>
+    <item>jp.co.radius.neplayer_asus</item>
+    <item>jp.co.yahoo.android.ebookjapan.preinstall</item>
+  </string-array>
+</resources>

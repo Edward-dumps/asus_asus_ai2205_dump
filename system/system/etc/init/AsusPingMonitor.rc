@@ -1,0 +1,18 @@
+service AsusPingMonitor /system/bin/AsusPingMonitor
+    class main
+    user root
+    group root
+    seclabel u:r:AsusPingMonitor:s0
+
+on property:sys.boot_completed=1
+    setprop sys.asus.ping_monitor.start_ping 0
+    start AsusPingMonitor
+
+on property:sys.asus.ping_monitor=1
+    restart AsusPingMonitor
+
+on property:sys.asus.ping_monitor=0
+    stop AsusPingMonitor
+
+on property:gsm.operator.iso-country=*
+    restart AsusPingMonitor

@@ -1,0 +1,87 @@
+#!/system/bin/sh
+
+LOG_TAG="AsusFocusModeService"
+GAME_ON=`getprop vendor.asus.gamingtype`
+
+log -p d -t "$LOG_TAG" "gamingtype is " "$GAME_ON"
+settings put system asus_gaming_type $GAME_ON
+
+#Below code not using
+'
+IPTABLES=/system/bin/iptables-wrapper-1.0
+TABLE=mangle
+TX_CHAIN=OUTPUT
+ASUS_FOCUS_CHAIN=asus_FocusMode
+DSCP_CLASS=EF
+focus_mode_enabled=`getprop persist.vendor.asus.focus_mode`
+focus_uid=`getprop vendor.asus.focus_uid`
+game_mode=`getprop vendor.asus.gamingtype`
+
+#${storm_vpn_enabled} is the uid of storm vpn itself
+storm_vpn_enabled=`getprop vendor.asus.storm_vpn`
+
+logd() {
+	msg=$1
+	log -p d -t "${LOG_TAG}" "${msg}"
+}
+
+create_ASUS_focus_mode_chain() {
+	#Check if rule exist first
+	${IPTABLES} -t ${TABLE} -C ${TX_CHAIN} -j ${ASUS_FOCUS_CHAIN}
+
+	if [ "$?" != "0" ]; then
+		logd "Create asus_FocusMode chain"
+		${IPTABLES} -N ${ASUS_FOCUS_CHAIN}
+		${IPTABLES} -t ${TABLE} -N ${ASUS_FOCUS_CHAIN}
+		${IPTABLES} -t ${TABLE} -I ${TX_CHAIN} -j ${ASUS_FOCUS_CHAIN}
+	else
+		logd "asus_FocusMode chain already exists"
+	fi
+}
+
+delete_ASUS_focus_mode_rule() {
+	logd "Flush asus_FocusMode chain"
+	${IPTABLES} -t ${TABLE} -F ${ASUS_FOCUS_CHAIN}
+}
+
+remove_ASUS_focus_mode_chain() {
+	logd "Remove asus_FocusMode chain"
+	delete_ASUS_focus_mode_rule
+	${IPTABLES} -t ${TABLE} -D ${TX_CHAIN} -j ${ASUS_FOCUS_CHAIN}
+}
+
+insert_ASUS_focus_mode_rule() {
+	uid=$1
+	logd "Insert asus_FocusMode chain"
+	delete_ASUS_focus_mode_rule
+	#logd "${IPTABLES} -t ${TABLE} -I ${ASUS_FOCUS_CHAIN} ! -o tun0 -m owner --uid ${uid} -j DSCP --set-dscp-class ${DSCP_CLASS}"
+	${IPTABLES} -t ${TABLE} -I ${ASUS_FOCUS_CHAIN} ! -o tun0 -m owner --uid ${uid} -j DSCP --set-dscp-class ${DSCP_CLASS}
+	if [ "$?" != "0" ]; then
+		logd "Failed to focus on uid: ${uid}"
+	fi
+	#logd "${IPTABLES} -t ${TABLE} -A ${ASUS_FOCUS_CHAIN} -m owner --uid ${storm_vpn_enabled} -j DSCP --set-dscp-class ${DSCP_CLASS}"
+	if [ -n ${storm_vpn_enabled} ]; then
+		${IPTABLES} -t ${TABLE} -A ${ASUS_FOCUS_CHAIN} -m owner --uid ${storm_vpn_enabled} -j DSCP --set-dscp-class ${DSCP_CLASS}
+	fi
+}
+
+main() {
+	logd "status: focus_mode_enabled=${focus_mode_enabled}, focus_uid=${focus_uid}, game_mode=${game_mode}, storm_vpn_enabled=${storm_vpn_enabled}"
+
+	if [ ${focus_mode_enabled} = "1" ]; then
+		create_ASUS_focus_mode_chain
+		if [ ${game_mode} = "1" ]; then
+			insert_ASUS_focus_mode_rule ${focus_uid}
+		else
+			logd "Game mode is disabled"
+			delete_ASUS_focus_mode_rule
+		fi
+	else
+		logd "Focus mode is disabled"
+		remove_ASUS_focus_mode_chain
+	fi
+}
+
+#start here
+main
+'

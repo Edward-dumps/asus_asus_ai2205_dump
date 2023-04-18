@@ -1,0 +1,329 @@
+###+++++++++ ASUS BSP Audio calibration server ++++###
+service audio_amp_calibration_play_music /system/bin/AudioAmpCalibrationPlayMusic
+        seclabel u:r:vendor_play_sound:s0
+        group root system audio
+        class core
+        user root
+        oneshot
+        disabled
+
+on property:vendor.asus.audioplaymusic=1
+    start audio_amp_calibration_play_music
+
+
+service audio_amp_calibration /system/bin/AudioAmpCalibration 0 2
+        seclabel u:r:shell:s0
+        group root system audio
+        class core
+        user root
+        oneshot
+        disabled
+
+on property:vendor.asus.audiocalibration=1
+    start audio_amp_calibration
+
+
+service audio_woofer_amp_calibration /system/bin/AudioWooferAmpCalibration
+        seclabel u:r:shell:s0
+        group root system audio
+        class core
+        user root
+        oneshot
+        disabled
+
+on property:vendor.asus.audiocalibration.woofer=1
+    start audio_woofer_amp_calibration
+
+service audio_amp_mute_sesrvice /system/bin/AudioWooferMuteService
+        seclabel u:r:vendor_play_sound:s0
+        group root system audio media
+        class core
+        user root
+        oneshot
+        disabled
+
+service audio_csc_amp_mute_sesrvice /system/bin/AudioCSCMuteService
+        seclabel u:r:vendor_play_sound:s0
+        group root system audio media
+        class core
+        user root
+        oneshot
+        disabled
+
+###--------- ASUS BSP Audio calibration server ----###
+
+###+++++++++ ASUS BSP Audio +++++++++###
+on property:vendor.use.audio.eu.parameters=*
+    setprop sys.use.audio.eu.parameters ${vendor.use.audio.eu.parameters}
+
+on property:sys.audio.dongle=*
+    setprop vendor.audio.dongle ${sys.audio.dongle}
+
+on property:sys.audio.boot_sound.completed=*
+    setprop vendor.audio.boot_sound.completed ${sys.audio.boot_sound.completed}
+
+on property:vendor.audio.crus.smartpa.inited=*
+    setprop sys.audio.crus.smartpa.inited ${vendor.audio.crus.smartpa.inited}
+
+on property:ro.vendor.build.asus.sku=*
+    setprop sys.build.asus.sku ${ro.vendor.build.asus.sku}
+
+on property:sys.audio.boot_sound.play=1
+    start boot_play_sound
+
+on property:sys.audio.ampmute=1
+    start audio_amp_mute_sesrvice
+
+on property:sys.audio.csc.spkrcv.ampmute=0
+    start audio_csc_amp_mute_sesrvice
+on property:sys.audio.csc.spkrcv.ampmute=1
+    start audio_csc_amp_mute_sesrvice
+
+###--------- ASUS BSP Audio ---------###
+
+on property:sys.foregroundapp=*
+	setprop vendor.foreground.app ${sys.foregroundapp}
+
+on property:vendor.factory.adbon=1
+    copy /vendor/factory/adbkey.pub /data/misc/adb/adb_keys
+    chown system shell /data/misc/adb/adb_keys
+    chmod 0640 /data/misc/adb/adb_keys
+
+on property:ro.product.system.brand=*
+    setprop vendor.audio.system.brand ${ro.product.system.brand}
+    setprop sys.audio.system.brand ${ro.product.system.brand}
+
+# ASUS_BSP USBH +++
+on property:sys.asus.donglestate_GV_PD=*
+    setprop vendor.asus.donglestate_GV_PD ${sys.asus.donglestate_GV_PD}
+on property:sys.asus.usb.speed=*
+	setprop vendor.asus.usb.speed ${sys.asus.usb.speed}
+# ASUS_BSP USBH ---
+
+# For ACCY dongle type
+on property:vendor.asus.dongletype=*
+	setprop sys.asus.dongletype ${vendor.asus.dongletype}
+
+# For inbox fan +++
+on property:persist.sys.asus.userfan=*
+	setprop persist.vendor.asus.userfan ${persist.sys.asus.userfan:-1}
+
+on property:sys.asus.thermalfan=*
+	setprop vendor.asus.thermalfan ${sys.asus.thermalfan:-1}
+
+on property:persist.sys.asus.micfansettings=*
+	setprop persist.vendor.asus.micfansettings ${persist.sys.asus.micfansettings:-1}
+
+on property:sys.asus.fan.mic=*
+	setprop vendor.asus.fan.mic ${sys.asus.fan.mic:-1}
+
+on property:persist.sys.asus.tempfan=*
+	setprop persist.vendor.asus.tempfan ${persist.sys.asus.tempfan:-1}
+
+on property:vendor.fan.rpm=*
+	setprop sys.fan.rpm ${vendor.fan.rpm:0}
+
+on property:persist.sys.asus.userfanrpm=*
+	setprop persist.vendor.asus.userfanrpm ${persist.sys.asus.userfanrpm:-1}
+
+on property:persist.sys.asus.coolerstage=*
+	setprop persist.vendor.asus.coolerstage ${persist.sys.asus.coolerstage:-1}
+
+on property:persist.sys.asus.coolerstage_csc=*
+	setprop persist.vendor.asus.coolerstage_csc ${persist.sys.asus.coolerstage_csc:-1}
+# For inbox fan ---
+
+# For Kunai GTS Workaround +++
+on property:sys.gamepad.left_fwupdate=1
+    setprop vendor.gamepad.left_fwupdate 1
+
+on property:vendor.gamepad.left_fwupdate=0
+	setprop sys.gamepad.left_fwupdate 0
+on property:vendor.gamepad.left_fwupdate=2
+	setprop sys.gamepad.left_fwupdate 2
+on property:vendor.gamepad.left_fwupdate=3
+	setprop sys.gamepad.left_fwupdate 3
+
+on property:sys.gamepad.holder_fwupdate=1
+    setprop vendor.gamepad.holder_fwupdate 1
+
+on property:vendor.gamepad.holder_fwupdate=0
+	setprop sys.gamepad.holder_fwupdate 0
+on property:vendor.gamepad.holder_fwupdate=2
+	setprop sys.gamepad.holder_fwupdate 2
+on property:vendor.gamepad.holder_fwupdate=3
+	setprop sys.gamepad.holder_fwupdate 3
+
+on property:sys.gamepad.wireless_fwupdate=1
+    setprop vendor.gamepad.wireless_fwupdate 1
+
+on property:vendor.gamepad.wireless_fwupdate=0
+	setprop sys.gamepad.wireless_fwupdate 0
+on property:vendor.gamepad.wireless_fwupdate=2
+	setprop sys.gamepad.wireless_fwupdate 2
+on property:vendor.gamepad.wireless_fwupdate=3
+	setprop sys.gamepad.wireless_fwupdate 3
+# For Kunai GTS Workaround ---
+
+# For Kunai III GTS Workaround +++
+on property:sys.gamepad3.left_fwupdate=1
+    setprop vendor.gamepad3.left_fwupdate 1
+
+on property:vendor.gamepad3.left_fwupdate=0
+	setprop sys.gamepad3.left_fwupdate 0
+on property:vendor.gamepad3.left_fwupdate=2
+	setprop sys.gamepad3.left_fwupdate 2
+on property:vendor.gamepad3.left_fwupdate=3
+	setprop sys.gamepad3.left_fwupdate 3
+
+on property:sys.gamepad3.middle_fwupdate=1
+    setprop vendor.gamepad3.middle_fwupdate 1
+
+on property:vendor.gamepad3.middle_fwupdate=0
+	setprop sys.gamepad3.middle_fwupdate 0
+on property:vendor.gamepad3.middle_fwupdate=2
+	setprop sys.gamepad3.middle_fwupdate 2
+on property:vendor.gamepad3.middle_fwupdate=3
+	setprop sys.gamepad3.middle_fwupdate 3
+
+on property:sys.gamepad3.right_fwupdate=1
+    setprop vendor.gamepad3.right_fwupdate 1
+
+on property:vendor.gamepad3.right_fwupdate=0
+	setprop sys.gamepad3.right_fwupdate 0
+on property:vendor.gamepad3.right_fwupdate=2
+	setprop sys.gamepad3.right_fwupdate 2
+on property:vendor.gamepad3.right_fwupdate=3
+	setprop sys.gamepad3.right_fwupdate 3
+
+on property:sys.gamepad3.bt_fwupdate=1
+    setprop vendor.gamepad3.bt_fwupdate 1
+
+on property:vendor.gamepad3.bt_fwupdate=0
+	setprop sys.gamepad3.bt_fwupdate 0
+on property:vendor.gamepad3.bt_fwupdate=2
+	setprop sys.gamepad3.bt_fwupdate 2
+on property:vendor.gamepad3.bt_fwupdate=3
+	setprop sys.gamepad3.bt_fwupdate 3
+
+on property:vendor.gamepad3.left_fwver=*
+	setprop sys.gamepad3.left_fwver ${vendor.gamepad3.left_fwver}
+on property:vendor.gamepad3.right_fwver=*
+	setprop sys.gamepad3.right_fwver ${vendor.gamepad3.right_fwver}
+on property:vendor.gamepad3.middle_fwver=*
+	setprop sys.gamepad3.middle_fwver ${vendor.gamepad3.middle_fwver}
+on property:vendor.gamepad3.bt_fwver=*
+	setprop sys.gamepad3.bt_fwver ${vendor.gamepad3.bt_fwver}
+
+on property:vendor.remotefw.gamepad3.bt_fwver=*
+	setprop vendor.asus.tmpVersion ${vendor.remotefw.gamepad3.bt_fwver:-1}
+
+on property:vendor.asus.gamepad.generation=*
+	setprop sys.asus.gamepad.generation ${vendor.asus.gamepad.generation}
+on property:vendor.asus.gamepad.type=*
+	setprop sys.asus.gamepad.type ${vendor.asus.gamepad.type}
+# For Kunai III GTS Workaround ---
+
+# For inbox7 FW update +++
+on property:vendor.fandg7.pd_fwupdate=0
+	setprop sys.fandg7.pd_fwupdate 0
+on property:vendor.fandg7.pd_fwupdate=2
+	setprop sys.fandg7.pd_fwupdate 2
+
+on property:vendor.fandg7.2led_fwupdate=0
+	setprop sys.fandg7.2led_fwupdate 0
+on property:vendor.fandg7.2led_fwupdate=2
+	setprop sys.fandg7.2led_fwupdate 2
+
+on property:vendor.fandg7.3led_fwupdate=0
+	setprop sys.fandg7.3led_fwupdate 0
+on property:vendor.fandg7.3led_fwupdate=2
+	setprop sys.fandg7.3led_fwupdate 2
+# For inbox7 FW update ---
+
+# For inbox FW update +++
+on property:vendor.fandg.aura_fwupdate=0
+	setprop sys.fandg.aura_fwupdate 0
+on property:vendor.fandg.aura_fwupdate=2
+	setprop sys.fandg.aura_fwupdate 2
+
+on property:vendor.fandg.mcu_fwupdate=0
+	setprop sys.fandg.mcu_fwupdate 0
+on property:vendor.fandg.mcu_fwupdate=2
+	setprop sys.fandg.mcu_fwupdate 2
+
+on property:vendor.fandg.pd_fwupdate=0
+	setprop sys.fandg.pd_fwupdate 0
+on property:vendor.fandg.pd_fwupdate=2
+	setprop sys.fandg.pd_fwupdate 2
+
+on property:vendor.fandg.pd_update_progress=*
+	setprop sys.fandg.pd_update_progress ${vendor.fandg.pd_update_progress:-1}
+# For inbox FW update ---
+
+on property:vendor.inbox.aura_fwver=*
+	setprop sys.inbox.aura_fwver ${vendor.inbox.aura_fwver:-1}
+on property:vendor.inbox.inbox_fwver=*
+	setprop sys.inbox.inbox_fwver ${vendor.inbox.inbox_fwver:-1}
+on property:vendor.inbox.pd_fwver=*
+	setprop sys.inbox.pd_fwver ${vendor.inbox.pd_fwver:-1}
+on property:vendor.oem.asus.inboxid=*
+	setprop sys.oem.asus.inboxid ${vendor.oem.asus.inboxid:-1}
+
+on property:vendor.asusfw.fandg6.inbox_fwver=*
+	setprop sys.asusfw.fandg6.inbox_fwver ${vendor.asusfw.fandg6.inbox_fwver:-1}
+on property:vendor.asusfw.fandg6.aura_fwver=*
+	setprop sys.asusfw.fandg6.aura_fwver ${vendor.asusfw.fandg6.aura_fwver:-1}
+on property:vendor.asusfw.fandg6.pd_fwver=*
+	setprop sys.asusfw.fandg6.pd_fwver ${vendor.asusfw.fandg6.pd_fwver:-1}
+	
+on property:vendor.inbox7.2led_fwver=*
+	setprop sys.inbox7.2led_fwver ${vendor.inbox7.2led_fwver:-1}
+on property:vendor.inbox7.3led_fwver=*
+	setprop sys.inbox7.3led_fwver ${vendor.inbox7.3led_fwver:-1}
+on property:vendor.inbox7.pd_fwver=*
+	setprop sys.inbox7.pd_fwver ${vendor.inbox7.pd_fwver:-1}
+
+on property:vendor.asusfw.fandg7.2led_fwver=*
+	setprop sys.asusfw.fandg7.2led_fwver ${vendor.asusfw.fandg7.2led_fwver:-1}
+on property:vendor.asusfw.fandg7.3led_fwver=*
+	setprop sys.asusfw.fandg7.3led_fwver ${vendor.asusfw.fandg7.3led_fwver:-1}
+on property:vendor.asusfw.fandg7.pd_fwver=*
+	setprop sys.asusfw.fandg7.pd_fwver ${vendor.asusfw.fandg7.pd_fwver:-1}
+# For ACCY FW status +++
+on property:vendor.asus.accy.fw_status=*
+	setprop sys.asus.accy.fw_status ${vendor.asus.accy.fw_status}
+on property:vendor.asus.accy.fw_status2=*
+	setprop sys.asus.accy.fw_status2 ${vendor.asus.accy.fw_status2}
+on property:vendor.asus.accy.fw_status3=*
+	setprop sys.asus.accy.fw_status3 ${vendor.asus.accy.fw_status3}
+on property:vendor.asus.accy.fw_status4=*
+	setprop sys.asus.accy.fw_status4 ${vendor.asus.accy.fw_status4}
+
+on property:vendor.asusfw.gamepad3.left_fwver=*
+	setprop sys.asusfw.gamepad3.left_fwver ${vendor.asusfw.gamepad3.left_fwver}
+on property:vendor.asusfw.gamepad3.right_fwver=*
+	setprop sys.asusfw.gamepad3.right_fwver ${vendor.asusfw.gamepad3.right_fwver}
+on property:vendor.asusfw.gamepad3.middle_fwver=*
+	setprop sys.asusfw.gamepad3.middle_fwver ${vendor.asusfw.gamepad3.middle_fwver}
+on property:vendor.asusfw.gamepad3.bt_fwver=*
+	setprop sys.asusfw.gamepad3.bt_fwver ${vendor.asusfw.gamepad3.bt_fwver}
+on property:vendor.asus.aura.gamepad=*
+	setprop sys.asus.aura.gamepad ${vendor.asus.aura.gamepad}
+# For ACCY FW status ---
+
+# For falling record
+on property:persist.sys.asus.motorservice.dumprecord=*
+	setprop persist.vendor.asus.motorservice.dumprecord ${persist.sys.asus.motorservice.dumprecord}
+on property:persist.sys.asus.motorservice.fallingTrigger=*
+	setprop persist.vendor.asus.motorservice.fallingTrigger ${persist.sys.asus.motorservice.fallingTrigger}
+on property:persist.sys.asus.motorservice.fallingtime=*
+	setprop persist.vendor.asus.motorservice.fallingtime ${persist.sys.asus.motorservice.fallingtime}
+on property:persist.sys.asus.motorservice.hitTrigger=*
+	setprop persist.vendor.asus.motorservice.hitTrigger ${persist.sys.asus.motorservice.hitTrigger}
+on property:persist.sys.asus.motorservice.hitime=*
+	setprop persist.vendor.asus.motorservice.hitime ${persist.sys.asus.motorservice.hitime}
+on property:persist.sys.asus.motorservice.thumpTrigger=*
+	setprop persist.vendor.asus.motorservice.thumpTrigger ${persist.sys.asus.motorservice.thumpTrigger}
+on property:persist.sys.asus.motorservice.thumptime=*
+	setprop persist.vendor.asus.motorservice.thumptime ${persist.sys.asus.motorservice.thumptime}

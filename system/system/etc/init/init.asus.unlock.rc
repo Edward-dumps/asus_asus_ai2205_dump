@@ -1,0 +1,11 @@
+# +++ ASUS BSP : User unlock tool +++
+service writekey /vendor/bin/writekey
+        class core
+        oneshot
+        disabled
+
+on property:sys.debug.write.asuskey=1
+        chmod 0644 /ADF/asuskey.bin
+        start writekey
+# --- ASUS BSP : User unlock tool ---
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorites>
+
+    <!-- screen [-1] -->
+
+    <!-- screen [0] -->
+    <appwidget
+        className="com.google.android.googlequicksearchbox.SearchWidgetProvider"
+        packageName="com.google.android.googlequicksearchbox"
+        screen="1"
+        spanX="4"
+        spanY="1"
+        x="0"
+        y="0" />
+    <appwidget
+        className="com.asus.weathertime.WeatherWidgetProviderPhone"
+        packageName="com.asus.weathertime"
+        screen="1"
+        spanX="4"
+        spanY="1"
+        x="0"
+        y="1" />
+    <folder
+        screen="1"
+        x="0"
+        y="4"
+        title="Google" >
+        <favorite
+            className="com.google.android.googlequicksearchbox.SearchActivity"
+            packageName="com.google.android.googlequicksearchbox" />
+        <favorite
+            className="com.google.android.gm.ConversationListActivityGmail"
+            packageName="com.google.android.gm" />
+        <favorite
+            className="com.google.android.maps.MapsActivity"
+            packageName="com.google.android.apps.maps" />
+        <favorite
+            className="com.google.android.youtube.app.honeycomb.Shell$HomeActivity"
+            packageName="com.google.android.youtube" />
+        <favorite
+            className="com.google.android.apps.docs.app.NewMainProxyActivity"
+            packageName="com.google.android.apps.docs" />
+        <favorite
+            className="com.google.android.apps.youtube.music.activities.MusicActivity"
+            packageName="com.google.android.apps.youtube.music" />
+        <favorite
+            className="com.google.android.videos.GoogleTvEntryPoint"
+            packageName="com.google.android.videos" />
+        <favorite
+            className="com.google.android.apps.tachyon.MainActivity"
+            packageName="com.google.android.apps.tachyon" />
+        <favorite
+            className="com.google.android.apps.photos.home.HomeActivity"
+            packageName="com.google.android.apps.photos" />
+        <favorite
+            className="com.android.calendar.AllInOneActivity"
+            packageName="com.google.android.calendar" />
+    </folder>
+    <favorite
+        className="com.asus.gamecenter.GameCenterActivity"
+        packageName="com.asus.gamecenter"
+        screen="1"
+        x="1"
+        y="4" />
+    <favorite
+        className="com.asus.gallery.app.EPhotoActivity"
+        packageName="com.asus.gallery"
+        screen="1"
+        x="2"
+        y="4" />
+    <favorite
+	className="com.android.vending.AssetBrowserActivity"
+        packageName="com.android.vending"
+        screen="1"
+        x="3"
+        y="4" />
+
+    <!-- screen [1] -->
+    <folder
+        screen="2"
+        x="0"
+        y="4"
+        title="Tools" >
+        <favorite
+            className="com.asus.calculator.Calculator"
+            packageName="com.asus.calculator" />
+        <favorite
+            className="com.asus.themeapp.ThemeAppActivityAlias"
+            packageName="com.asus.themeapp" />
+        <favorite
+            className="com.asus.tips.TipListActivity"
+            packageName="com.asus.tips" />
+        <favorite
+            className="com.android.contacts.activities.PeopleActivity"
+            packageName="com.asus.contacts" />
+        <favorite
+            className="com.asus.filemanager.activity.FileManagerActivity"
+            packageName="com.asus.filemanager" />
+		<favorite
+            className="com.asus.soundrecorder.AsusRecorder"
+            packageName="com.asus.soundrecorder" />
+        <favorite
+            className="com.asus.weathertime.WeatherTimeSettings"
+            packageName="com.asus.weathertime" />
+		<favorite
+            className="com.futuredial.asusdatatransfer.DefaultLauncherActivity"
+            packageName="com.futuredial.asusdatatransfer" />
+		<favorite
+            className="com.asus.deskclock.DeskClock"
+            packageName="com.asus.deskclock" />
+    </folder>
+	<favorite
+        className="com.epicgames.ue4.SplashActivity"
+        packageName="com.tencent.ig"
+        screen="2"
+        x="2"
+        y="4" />
+    <favorite
+        className="com.facebook.katana.LoginActivity"
+        packageName="com.facebook.katana"
+        screen="2"
+        x="3"
+        y="4" />
+
+    <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
+    <favorite
+        className="com.android.contacts.activities.DialtactsActivity"
+        packageName="com.asus.dialer"
+        container="-103"
+        screen="0"
+        x="0"
+        y="0" />
+    <favorite
+        className="com.google.android.apps.messaging.ui.ConversationListActivity"
+        packageName="com.google.android.apps.messaging"
+        container="-103"
+        screen="1"
+        x="1"
+        y="0" />
+    <favorite
+        className="com.google.android.apps.chrome.Main"
+        packageName="com.android.chrome"
+        container="-103"
+        screen="2"
+        x="2"
+        y="0" />
+    <favorite
+        className="com.asus.camera.CameraApp"
+        packageName="com.asus.camera"
+        container="-103"
+        screen="3"
+        x="3"
+        y="0" />
+
+</favorites>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fz_wb_proc>
+
+<version number="1"/>
+
+<!-- white proc sample -->
+<!-- <wb_proc type="w_proc" pkg="com.asus.deskclock" proc="com.asus.deskclock:main"/> -->
+
+<!-- black proc sample -->
+<!-- <wb_proc type="b_proc" pkg="com.asus.deskclock" proc="com.asus.deskclock:ui"/> -->
+
+<config_file_var name="ZS673KS_WW_support_pending_alarm" value="1"/>
+<config_file_var name="ZS670KS_WW_support_pending_alarm" value="1"/>
+
+</fz_wb_proc>

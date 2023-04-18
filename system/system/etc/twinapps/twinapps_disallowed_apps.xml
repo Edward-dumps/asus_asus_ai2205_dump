@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (C) 2014 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <!-- A list of apps to be retained on the managed device.
+            Takes precedence over the disallowed apps lists. -->
+    <string-array name="twinapps_disallowed_apps">
+        <item>com.asus.asuszenuipcsuite</item>
+        <item>com.asus.launcher</item>
+        <item>com.asus.launcher3</item>
+        <item>com.asus.easylauncher</item>
+        <item>com.asus.kidslauncher</item>
+        <item>com.asus.launcher.twinviewmode</item>
+        <item>dk.icepower.icesound</item>
+        <item>com.asus.mobilemanagerservice</item>
+        <item>com.asus.taskwidget</item>
+        <item>com.asus.system.api</item>
+        <item>com.asus.visualmaster</item>
+        <item>com.asus.audiowizard</item>
+        <item>com.asus.imagesearch</item>
+
+        <item>com.android.documentsui</item>
+        <item>com.android.providers.downloads.ui</item>
+        <item>com.asus.contacts.theme.dark</item>
+        <item>com.asus.flipcover2</item>
+        <item>com.asus.flipcover3</item>
+        <item>com.asus.webview</item>
+        <item>com.asus.asusbrowserproviderproxy</item>
+        <item>com.asus.keyboard</item>
+        <item>com.asus.linkrim.service</item>
+        <item>com.asus.lockscreen</item>
+        <item>com.asus.quickmemoservice</item>
+        <item>com.asus.shim</item>
+        <item>com.android.cellbroadcastreceiver</item>
+        <item>com.android.apps.tag</item>
+        <item>com.asus.focusapplistener</item>
+        <item>com.asus.dm</item>
+        <item>com.asus.setupwizard</item>
+        <item>com.android.bluetooth</item>
+        <item>com.android.bluetoothmidiservice</item>
+        <item>com.asus.playto</item>
+        <item>com.android.htmlviewer</item>
+        <item>com.monotype.android.font.syndor</item>
+        <item>com.monotype.android.font.felbridge</item>
+        <item>com.monotype.android.font.myuppymediumtc</item>
+        <item>com.monotype.android.font.mfinancehkbold</item>
+        <item>com.android.basicsmsreceiver</item>
+        <item>com.asus.powerstatistics</item>
+        <item>com.asus.alwayson</item>
+        <item>com.asus.UpdateLauncher</item>
+        <item>com.asus.configupdater</item>
+        <item>com.asus.appupdater</item>
+        <item>com.asus.seconddisplay</item>
+        <item>com.asus.seconddisplayeditor</item>
+        <item>com.asus.powersaver</item>
+
+        <!-- frameworks/base/packages -->
+        <item>com.android.captiveportallogin</item>
+        <item>com.android.backupconfirm</item>
+        <item>com.android.sharedstoragebackup</item>
+        <item>com.android.smspush</item>
+        <item>com.android.wallpapercropper</item>
+        <item>com.android.externalstorage</item>
+        <item>com.asus.inputdevices</item>
+        <item>com.android.inputdevices</item>
+        <item>com.android.defcontainer</item>
+        <item>com.android.shell</item>
+        <item>com.android.vpndialogs</item>
+        <!-- wallpaper -->
+        <item>com.android.wallpaper</item>
+        <item>com.android.wallpaper.livepicker</item>
+        <item>com.android.galaxy4</item>
+        <item>com.android.noisefield</item>
+        <item>com.android.wallpaper.holospiral</item>
+        <item>com.android.phasebeam</item>
+        <!-- packages/services -->
+        <item>com.android.mms.service</item>
+
+        <item>com.android.dreams.basic</item>
+        <!-- packages/providers -->
+        <item>com.android.bookmarkprovider</item>
+        <item>com.android.providers.partnerbookmarks</item>
+
+        <!-- Apps -->
+        <item>com.asus.asusincallui</item>
+        <item>com.asus.server.azs</item>
+        <item>com.asus.ephotoburst</item>
+        <item>com.android.certinstaller</item>
+        <item>com.asus.sensorapi.service</item>
+        <item>com.asus.DLNA</item>
+        <item>com.android.managedprovisioning</item>
+        <item>com.asus.maxxaudio</item>
+        <item>com.asus.drawres</item>
+        <item>com.asus.browsergenie</item>
+        <item>com.asus.as</item>
+        <item>com.asus.eehui</item>
+        <item>com.asus.csclogtool</item>
+        <item>com.asus.fmradio</item>
+        <item>com.asus.emergencyhelp</item>
+        <item>com.asus.livedemo</item>
+        <item>com.asus.lockscreen2</item>
+        <item>com.asus.zenheart</item>
+        <item>com.asus.zenheart.ripple</item>
+        <item>com.futuredial.asuslocalbackup</item>
+        <item>com.android.printspooler</item>
+        <item>com.google.android.printservice.recommendation</item>
+        <item>com.android.bips</item>
+        <item>com.android.soundpicker</item>
+
+        <!-- vendor/app-prebuilt -->
+        <item>com.asus.packageinstaller</item>
+        <item>com.asus.visualmastercommandagent</item>
+        <item>com.google.android.apps.docs.oem</item>
+        <item>com.asus.davinci.locationpicker</item>
+        <item>com.android.pacprocessor</item>
+        <item>com.android.proxyhandler</item>
+        <item>com.asus.splendid</item>
+        <item>com.asus.splendidcommandagent</item>
+        <item>android.autoinstalls.config.asus.pai</item>
+        <item>com.google.android.tts</item>
+        <item>com.asus.hardwarestub</item>
+        <item>com.asus.appinstallationservice</item>
+        <item>com.android.carrierconfig</item>
+        <item>com.android.statementservice</item>
+        <item>com.mediatek.mtklogger</item>
+        <item>com.google.android.apps.tachyon</item>
+
+        <item>com.google.android.backuptransport</item>
+        <item>com.google.android.configupdater</item>
+        <item>com.google.android.onetimeinitializer</item>
+        <item>com.google.android.setupwizard</item>
+        <item>com.google.ar.lens</item>
+        <item>com.google.android.inputmethod.latin</item>
+
+        <!-- Android T -->
+        <item>com.android.chrome</item>
+        <item>com.android.vending</item>
+        <item>com.android.settings</item>
+        <item>com.android.settings.intelligence</item>
+        <item>com.android.settings.auto_generated_rro_product__</item>
+
+        <!-- CN -->
+        <item>com.asus.cnsetupwizard</item>
+        <item>com.monotype.android.font.mfinanceprcbold</item>
+        <item>com.monotype.android.font.myinghei18030m</item>
+        <item>com.monotype.android.font.myuppymediumsc</item>
+        <item>com.amax.livewallpaper.parallaxwallpaper</item>
+        <item>com.lovelyfont.defcontainer</item>
+        <item>com.displaylink.presenter.noicon</item>
+        <item>com.tencent.inlab.tcsystem</item>
+        <item>com.tencent.inlab.tgpaserver</item>
+        <item>com.tencent.inlab.solarcore</item>
+
+        <!-- ODM -->
+        <item>com.wind.windruntimetest</item>
+        <item>com.qualcomm.atfwd</item>
+        <item>com.qualcomm.qti.qdma</item>
+        <item>com.qualcomm.qti.smcinvokepkgmgr</item>
+        <item>com.qti.qualcomm.datastatusnotification</item>
+        <!-- Qualcomm -->
+        <item>com.displaylink.presenter.noicon</item>
+    </string-array>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<game-dnd-system-policy version="1" >
+    <!-- About toast / overlay window -->
+    <system-allow-floating package="com.asus.calculator"/>
+    <system-allow-floating package="com.asus.gamewidget"/>
+    <system-allow-floating package="com.asus.launcher"/>
+    <system-allow-floating package="com.asus.launcher3"/>
+    <system-allow-floating package="com.asus.mobilemanager"/>
+    <system-allow-floating package="com.asus.screenrecorder"/>
+    <system-allow-floating package="com.asus.taskwidget"/>
+    <system-allow-floating package="com.iflytek.inputmethod.custom"/>
+    <!-- About activity -->
+    <deny-activity component="com.facebook.orca/com.facebook.rtc.activities.WebrtcIncallFragmentHostActivity" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="com.facebook.orca/com.facebook.rtc.activities.WebrtcResizeableIncallFragmentHostActivity" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="com.kugou.android.ringtone/com.kugou.android.ringtone.vshow.activity.PhoneCallActivity" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="com.skype.raider/com.skype.raider.Main" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="com.tencent.mm/com.tencent.mm.plugin.voip.ui.VideoActivity" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="com.tencent.mobileqq/com.tencent.av.ui.VideoInviteActivity" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="com.tencent.mobileqq/com.tencent.av.ui.VideoInviteFull" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="com.tencent.mobileqq/com.tencent.av.ui.VChatActivity" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="jp.naver.line.android/com.linecorp.voip.ui.base.VoIPServiceActivity" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="jp.naver.line.android/jp.naver.line.android.activity.pushdialog.PushDialogActivity" game-mode="GAME_DND_NOTIFICATION"/>
+    <deny-activity component="jp.naver.line.android/jp.naver.line.android.activity.pushdialog.PushDialogSleepActivity" game-mode="GAME_DND_NOTIFICATION"/>
+    <deny-activity component="com.viber.voip/com.viber.voip.phone.PhoneFragmentActivity" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="com.viber.voip/com.viber.voip.WakeUpViberActivity" game-mode="GAME_DND_CALL"/>
+    <deny-activity component="com.whatsapp/com.whatsapp.voipcalling.VoipActivityV2" game-mode="GAME_DND_CALL"/>
+    <!-- About Sound -->
+    <deny-sound package="com.tencent.mobileqq" usage="USAGE_UNKNOWN" game-mode="GAME_DND_NOTIFICATION"/>
+    <!-- About vibration -->
+    <deny-vibration package="com.facebook.orca" usage="USAGE_UNKNOWN" game-mode="GAME_DND_CALL"/>
+    <deny-vibration package="com.facebook.orca" usage="USAGE_NOTIFICATION" game-mode="GAME_DND_CALL"/>
+    <deny-vibration package="com.skype.raider" usage="USAGE_UNKNOWN" game-mode="GAME_DND_CALL"/>
+    <deny-vibration package="com.tencent.mm" usage="USAGE_UNKNOWN" game-mode="GAME_DND_CALL"/>
+    <deny-vibration package="com.tencent.mobileqq" usage="USAGE_UNKNOWN" game-mode="GAME_DND_NOTIFICATION | GAME_DND_CALL"/>
+    <deny-vibration package="com.whatsapp" usage="USAGE_UNKNOWN" game-mode="GAME_DND_CALL"/>
+    <deny-vibration package="jp.naver.line.android" usage="USAGE_UNKNOWN" game-mode="GAME_DND_CALL"/>
+    <!--- About custom activity, used for GAME_DND_CUSTOM_ACTIVITY -->
+    <custom-activity component="com.tencent.mm/com.tencent.mm.plugin.voip.ui.VideoActivity" show="true" game-mode="GAME_DND_CALL" />
+    <custom-activity component="com.tencent.mobileqq/com.tencent.av.ui.VideoInviteActivity" show="true" game-mode="GAME_DND_CALL" />
+    <custom-activity component="com.tencent.mobileqq/com.tencent.av.ui.VideoInviteFull" show="true" game-mode="GAME_DND_CALL" />
+    <custom-activity component="com.tencent.mobileqq/com.tencent.av.ui.VChatActivity" show="false" game-mode="GAME_DND_CALL" />
+    <!-- About notification call -->
+    <call-list package="com.facebook.orca" ntag="NULL" category="NULL" groupkey="NULL" keywords="call, voip" />
+    <call-list package="com.facebook.orca" ntag="NOT_NULL" category="NULL" groupkey="NULL" keywords="messaging" />
+    <call-list package="com.skype.raider" ntag="NULL" category="msg" groupkey="NOT_NULL" keywords="call" />
+    <call-list package="com.viber.voip" ntag="NOT_NULL" category="msg" groupkey="NULL" keywords="call" />
+    <call-list package="jp.naver.line.android" ntag="NULL" category="msg" groupkey="NULL" keywords="call, voip" />
+    <call-list package="jp.naver.line.android" ntag="NOT_NULL" category="msg" groupkey="NULL" keywords="call, voip" />
+</game-dnd-system-policy>

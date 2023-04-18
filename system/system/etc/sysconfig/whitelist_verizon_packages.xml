@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+
+<allow-implicit-broadcast action="com.verizon.provider.Settings.PHONE_STATE_MODIFY" />
+<allow-implicit-broadcast action="com.verizon.net.CONNECTIVITY_CHANGE" />
+<allow-implicit-broadcast action="com.verizon.net.IMS_REGISTRATION" />
+<allow-implicit-broadcast action="com.verizon.provider.ACTION_SETTING_CHANGED" />
+
+</config>

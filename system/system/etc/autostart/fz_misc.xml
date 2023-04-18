@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fz_misc>
+
+<version number="5"/>
+
+<app_cat_map launcher_cat="GAME_WORD" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_TRIVIA" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_STRATEGY" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_SPORTS" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_SIMULATION" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_ROLE_PLAYING" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_RACING" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_PUZZLE" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_MUSIC" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_EDUCATIONAL" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_CASUAL" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_CASINO" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_CARD" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_BOARD" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_ARCADE" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_ADVENTURE" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME_ACTION" freezer_cat="game"/>
+<app_cat_map launcher_cat="GAME" freezer_cat="game"/>
+<app_cat_map launcher_cat="SPORTS" freezer_cat="health"/>
+<app_cat_map launcher_cat="HEALTH_AND_FITNESS" freezer_cat="health"/>
+<app_cat_map launcher_cat="MAPS_AND_NAVIGATION" freezer_cat="map2"/>
+<app_cat_map launcher_cat="MUSIC_AND_AUDIO" freezer_cat="music"/>
+<app_cat_map launcher_cat="SOCIAL" freezer_cat="social"/>
+<app_cat_map launcher_cat="DATING" freezer_cat="social"/>
+<app_cat_map launcher_cat="COMMUNICATION" freezer_cat="social"/>
+<app_cat_map launcher_cat="VIDEO_PLAYERS" freezer_cat="video"/>
+
+<app_cat_map launcher_cat="游戏" freezer_cat="game"/>
+<app_cat_map launcher_cat="视频" freezer_cat="video"/>
+<app_cat_map launcher_cat="社交" freezer_cat="social"/>
+<app_cat_map launcher_cat="导航" freezer_cat="map2"/>
+<app_cat_map launcher_cat="健康" freezer_cat="health"/>
+
+<default_cat_switch cat="social" freeze="0"/>
+<default_cat_switch cat="mail_box" freeze="0"/>
+<default_cat_switch cat="map2" freeze="0" />
+
+<default_app_switch pkg="com.tencent.mm" freeze="0"/>
+<default_app_switch pkg="com.asus.cnredpacket" freeze="0"/>
+<default_app_switch pkg="com.perfdog.app" freeze="0"/>
+<default_app_switch pkg="com.taobao.idlefish" freeze="0"/>
+<default_app_switch pkg="com.eg.android.AlipayGphone" freeze="0"/>
+<default_app_switch pkg="ccc71.bmw" freeze="0"/>
+
+<skip_preload pkg="com.tencent.qqlive"/>
+
+</fz_misc>

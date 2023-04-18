@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fz_app_category>
+
+<version number="3"/>
+
+<category cat="app_store" pkg="com.android.vending"/>
+<category cat="app_store" pkg="com.tencent.android.qqdownloader"/>
+<category cat="app_store" pkg="com.tencent.southpole.appstore"/>
+<category cat="app_store" pkg="com.qihoo.appstore"/>
+
+<category cat="cloud_disk" pkg="com.google.android.apps.docs"/>
+<category cat="cloud_disk" pkg="com.baidu.netdisk"/>
+<category cat="cloud_disk" pkg="com.qq.qcloud"/>
+<category cat="cloud_disk" pkg="com.ctfile"/>
+
+<category cat="mail_box" pkg="com.microsoft.office.outlook"/>
+<category cat="mail_box" pkg="com.google.android.gm"/>
+<category cat="mail_box" pkg="com.tencent.androidqqmail"/>
+<category cat="mail_box" pkg="com.netease.mail"/>
+
+<category cat="map2" pkg="com.google.android.apps.maps"/>
+<category cat="map2" pkg="com.grabtaxi.passenger"/>
+<category cat="map2" pkg="com.waze"/>
+
+<category cat="health" pkg="com.fitbit.FitbitMobile"/>
+<category cat="health" pkg="com.sec.android.app.shealth"/>
+<category cat="health" pkg="com.google.android.apps.fitness"/>
+<category cat="health" pkg="com.garmin.android.apps.connectmobile"/>
+<category cat="health" pkg="com.strava"/>
+<category cat="health" pkg="pedometer.steptracker.calorieburner.stepcounter"/>
+<category cat="health" pkg="com.mapmyrun.android2"/>
+<category cat="health" pkg="com.mapmywalk.android2"/>
+<category cat="health" pkg="com.mapmyride.android2"/>
+<category cat="health" pkg="com.endomondo.android"/>
+<category cat="health" pkg="com.fitnesskeeper.runkeeper.pro"/>
+<category cat="health" pkg="com.nike.plusgps"/>
+<category cat="health" pkg="com.runtastic.android"/>
+<category cat="health" pkg="com.runtastic.android.me.lite"/>
+<category cat="health" pkg="com.xiaomi.hm.health"/>
+<category cat="health" pkg="steptracker.healthandfitness.walkingtracker.pedometer"/>
+<category cat="health" pkg="pedometer.stepcounter.calorieburner.pedometerforwalking"/>
+<category cat="health" pkg="com.uthink.ring"/>
+<category cat="health" pkg="com.huawei.health"/>
+<category cat="health" pkg="running.tracker.gps.map"/>
+<category cat="health" pkg="com.corusen.accupedo.te"/>
+<category cat="health" pkg="com.corusen.aplus"/>
+
+<category cat="music" pkg="com.spotify.music"/>
+<category cat="music" pkg="com.google.android.music"/>
+<category cat="music" pkg="com.google.android.apps.youtube.music"/>
+<category cat="music" pkg="com.tencent.ibg.joox"/>
+<category cat="music" pkg="com.skysoft.kkbox.android"/>
+<category cat="music" pkg="mbinc12.mb32"/>
+
+<category cat="social" pkg="com.whatsapp"/>
+<category cat="social" pkg="com.facebook.katana"/>
+<category cat="social" pkg="com.asus.contacts"/>
+<category cat="social" pkg="jp.naver.line.android"/>
+<category cat="social" pkg="com.facebook.orca"/>
+<category cat="social" pkg="com.instagram.android"/>
+<category cat="social" pkg="com.google.android.apps.messaging"/>
+<category cat="social" pkg="com.tencent.mm"/>
+<category cat="social" pkg="com.discord"/>
+<category cat="social" pkg="com.snapchat.android"/>
+<category cat="social" pkg="org.telegram.messenger"/>
+<category cat="social" pkg="com.truecaller"/>
+<category cat="social" pkg="com.zing.zalo"/>
+<category cat="social" pkg="com.viber.voip"/>
+<category cat="social" pkg="com.michatapp.im"/>
+<category cat="social" pkg="com.zhiliaoapp.musically"/>
+<category cat="social" pkg="com.tencent.mobileqq"/>
+<category cat="social" pkg="com.whatsapp.w4b"/>
+<category cat="social" pkg="com.vkontakte.android"/>
+<category cat="social" pkg="com.facebook.lite"/>
+<category cat="social" pkg="com.kakao.talk"/>
+<category cat="social" pkg="com.skype.raider"/>
+<category cat="social" pkg="com.joshua.jptt"/>
+<category cat="social" pkg="sg.bigo.live"/>
+<category cat="social" pkg="com.google.android.apps.tachyon"/>
+<category cat="social" pkg="jp.co.airfront.android.a2chMate"/>
+<category cat="social" pkg="mong.moptt"/>
+<category cat="social" pkg="com.imo.android.imoim"/>
+<category cat="social" pkg="com.lihkg.app"/>
+<category cat="social" pkg="com.pinterest"/>
+<category cat="social" pkg="com.yy.hiyo"/>
+<category cat="social" pkg="com.ihad.ptt"/>
+<category cat="social" pkg="com.twitter.android"/>
+<category cat="social" pkg="com.microsoft.teams"/>
+<category cat="social" pkg="com.Slack"/>
+
+<category cat="tool" pkg="com.asus.launcher"/>
+<category cat="tool" pkg="com.android.chrome"/>
+<category cat="tool" pkg="com.asus.asusincallui"/>
+<category cat="tool" pkg="com.asus.launcher3"/>
+<category cat="tool" pkg="com.asus.gamecenter"/>
+<category cat="tool" pkg="com.google.android.googlequicksearchbox"/>
+<category cat="tool" pkg="com.asus.deskclock"/>
+<category cat="tool" pkg="com.asus.camera"/>
+<category cat="tool" pkg="com.asus.gallery"/>
+<category cat="tool" pkg="com.teslacoilsw.launcher"/>
+<category cat="tool" pkg="com.google.android.gms"/>
+<category cat="tool" pkg="com.asus.mobilemanager"/>
+<category cat="tool" pkg="com.asus.setupwizard"/>
+<category cat="tool" pkg="com.asus.filemanager"/>
+<category cat="tool" pkg="com.asus.calculator"/>
+<category cat="tool" pkg="com.google.android.apps.photos"/>
+<category cat="tool" pkg="com.vanced.android.youtube"/>
+<category cat="tool" pkg="com.netflix.mediaclient"/>
+<category cat="tool" pkg="com.UCMobile.intl"/>
+<category cat="tool" pkg="org.mozilla.firefox"/>
+<category cat="tool" pkg="com.google.android.calendar"/>
+<category cat="tool" pkg="com.reddit.frontpage"/>
+<category cat="tool" pkg="com.google.android.apps.translate"/>
+<category cat="tool" pkg="com.amazon.mShop.android.shopping"/>
+<category cat="tool" pkg="com.ilike.cartoon"/>
+<category cat="tool" pkg="com.lazada.android"/>
+<category cat="tool" pkg="tw.com.gamer.android.activecenter"/>
+<category cat="tool" pkg="com.shopee.tw"/>
+<category cat="tool" pkg="com.sec.android.app.sbrowser"/>
+<category cat="tool" pkg="com.tinder"/>
+<category cat="tool" pkg="com.tokopedia.tkpd"/>
+<category cat="tool" pkg="in.amazon.mShop.android.shopping"/>
+<category cat="tool" pkg="com.flipkart.android"/>
+<category cat="tool" pkg="com.netease.g104na.gb"/>
+<category cat="tool" pkg="com.gbwhatsapp"/>
+<category cat="tool" pkg="tv.twitch.android.app"/>
+<category cat="tool" pkg="com.taobao.taobao"/>
+<category cat="tool" pkg="com.amazon.avod.thirdpartyclient"/>
+<category cat="tool" pkg="com.shopee.my"/>
+<category cat="tool" pkg="com.lbe.parallel.intl.arm64"/>
+<category cat="tool" pkg="com.opera.browser"/>
+<category cat="tool" pkg="com.shopee.id"/>
+<category cat="tool" pkg="com.alibaba.aliexpresshd"/>
+<category cat="tool" pkg="com.lenovo.anyshare.gps"/>
+<category cat="tool" pkg="com.google.android.keep"/>
+<category cat="tool" pkg="com.shopee.th"/>
+<category cat="tool" pkg="com.application.zomato"/>
+<category cat="tool" pkg="com.gojek.app"/>
+<category cat="tool" pkg="in.swiggy.android"/>
+<category cat="tool" pkg="com.brave.browser"/>
+<category cat="tool" pkg="com.ebay.mobile"/>
+<category cat="tool" pkg="com.ninegag.android.app"/>
+<category cat="tool" pkg="air.jp.co.cygames.worldflipper"/>
+<category cat="tool" pkg="com.global.foodpanda.android"/>
+<category cat="tool" pkg="com.android.browser"/>
+<category cat="tool" pkg="com.notabasement.mangarock.android.lotus"/>
+<category cat="tool" pkg="tw.clotai.easyreader"/>
+<category cat="tool" pkg="cn.wps.moffice_eng"/>
+<category cat="tool" pkg="com.coccoc.trinhduyet"/>
+<category cat="tool" pkg="in.startv.hotstar"/>
+<category cat="tool" pkg="com.shopee.ph"/>
+<category cat="tool" pkg="com.ubercab.eats"/>
+<category cat="tool" pkg="com.asus.livedemo"/>
+<category cat="tool" pkg="com.dena.skyleap"/>
+<category cat="tool" pkg="com.epicgames.fortnite"/>
+<category cat="tool" pkg="com.shopee.vn"/>
+<category cat="tool" pkg="devian.tubemate.v3"/>
+<category cat="tool" pkg="com.google.chromeremotedesktop"/>
+<category cat="tool" pkg="com.naver.linewebtoon"/>
+<category cat="tool" pkg="com.andrewshu.android.reddit"/>
+<category cat="tool" pkg="com.YoStarJP.Arknights"/>
+<category cat="tool" pkg="com.google.android.apps.magazines"/>
+<category cat="tool" pkg="com.hsv.freeadblockerbrowser"/>
+<category cat="tool" pkg="com.nemo.vidmate"/>
+<category cat="tool" pkg="com.madhead.tos.zh.ex"/>
+<category cat="tool" pkg="com.disgaearpg.forwardworks"/>
+<category cat="tool" pkg="com.lara.android.youtube"/>
+<category cat="tool" pkg="com.iwantavnow.android"/>
+<category cat="tool" pkg="com.microsoft.emmx"/>
+<category cat="tool" pkg="com.ubercab.driver"/>
+<category cat="tool" pkg="com.tv.v18.viola"/>
+<category cat="tool" pkg="com.dmm.dmmlabo.kancolle"/>
+<category cat="tool" pkg="tw.com.mcddaily"/>
+<category cat="tool" pkg="com.YoStarEN.Arknights"/>
+<category cat="tool" pkg="com.yandex.browser"/>
+<category cat="tool" pkg="tw.com.gamer.android.animad"/>
+<category cat="tool" pkg="com.jio.jioplay.tv"/>
+<category cat="tool" pkg="com.opera.mini.native"/>
+<category cat="tool" pkg="com.boltrend.mitratc"/>
+<category cat="tool" pkg="com.duckduckgo.mobile.android"/>
+<category cat="tool" pkg="com.huya.nimo"/>
+<category cat="tool" pkg="com.qidian.QDReader"/>
+<category cat="tool" pkg="jp.co.yahoo.android.yjtop"/>
+<category cat="tool" pkg="com.uc.browser.en"/>
+
+<category cat="video" pkg="com.google.android.youtube"/>
+<category cat="video" pkg="com.mxtech.videoplayer.ad"/>
+<category cat="video" pkg="com.ss.android.ugc.trill"/>
+<category cat="video" pkg="com.ss.android.ugc.aweme"/>
+<category cat="video" pkg="org.videolan.vlc"/>
+<category cat="video" pkg="com.mxtech.videoplayer.pro"/>
+<category cat="video" pkg="tv.danmaku.bili"/>
+<category cat="video" pkg="com.bilibili.app.in"/>
+<category cat="video" pkg="com.nexstreaming.app.kinemasterfree"/>
+<category cat="video" pkg="video.player.videoplayer"/>
+
+<category cat="vpn" pkg="com.findtheway"/>
+<category cat="vpn" pkg="com.xfx.surfvpn"/>
+<category cat="vpn" pkg="com.vpn.kmvpn11"/>
+<category cat="vpn" pkg="net.openvpn.openvpn"/>
+<category cat="vpn" pkg="com.open.hotspot.vpn.free"/>
+<category cat="vpn" pkg="free.vpn.unblock.proxy.turbovpn"/>
+<category cat="vpn" pkg="com.pandavpnfree.androidproxy"/>
+<category cat="vpn" pkg="free.vpn.unblock.proxy.vpnmaster"/>
+<category cat="vpn" pkg="com.xiaoming.vpn"/>
+<category cat="vpn" pkg="com.jrzheng.supervpnfree"/>
+<category cat="vpn" pkg="com.joy.app.vpn"/>
+
+<category cat="game" pkg="com.tencent.ig"/>
+<category cat="game" pkg="com.mobile.legends"/>
+<category cat="game" pkg="com.nianticlabs.pokemongo"/>
+<category cat="game" pkg="com.pearlabyss.blackdesertm.gl"/>
+<category cat="game" pkg="com.garena.game.codm"/>
+<category cat="game" pkg="com.garena.game.kgvn"/>
+<category cat="game" pkg="com.garena.game.kgtw"/>
+<category cat="game" pkg="com.supercell.clashofclans"/>
+<category cat="game" pkg="com.tencent.tmgp.sgame"/>
+<category cat="game" pkg="com.activision.callofduty.shooter"/>
+<category cat="game" pkg="com.dts.freefireth"/>
+<category cat="game" pkg="com.gameloft.android.ANMP.GloftA9HM"/>
+<category cat="game" pkg="com.gravity.romg"/>
+<category cat="game" pkg="com.vng.pubgmobile"/>
+<category cat="game" pkg="com.hkmanjuu.azurlane.gp"/>
+<category cat="game" pkg="com.garena.game.kgth"/>
+<category cat="game" pkg="com.supercell.clashroyale"/>
+<category cat="game" pkg="com.aniplex.fategrandorder"/>
+<category cat="game" pkg="com.YoStarJP.AzurLane"/>
+<category cat="game" pkg="com.lilithgame.roc.gp"/>
+<category cat="game" pkg="com.madhead.tos.zh"/>
+<category cat="game" pkg="com.nxth.wodn"/>
+<category cat="game" pkg="tw.sonet.princessconnect"/>
+<category cat="game" pkg="com.komoe.zzgp"/>
+<category cat="game" pkg="com.habby.archero"/>
+<category cat="game" pkg="jp.konami.pesam"/>
+<category cat="game" pkg="com.pubg.krmobile"/>
+<category cat="game" pkg="com.stove.epic7.google"/>
+<category cat="game" pkg="com.netmarble.kofg"/>
+<category cat="game" pkg="com.onepunchman.ggplay.tw"/>
+<category cat="game" pkg="com.garena.game.fctw"/>
+<category cat="game" pkg="com.tencent.tmgp.pubgmhd"/>
+<category cat="game" pkg="com.com2us.smon.normal.freefull.google.kr.android.common"/>
+<category cat="game" pkg="com.rekoo.pubgm"/>
+<category cat="game" pkg="com.baoz.gptw"/>
+<category cat="game" pkg="com.lilithgame.hgame.gp.tw"/>
+<category cat="game" pkg="com.miHoYo.bh3oversea"/>
+<category cat="game" pkg="com.supercell.brawlstars"/>
+<category cat="game" pkg="com.miHoYo.bh3tw"/>
+<category cat="game" pkg="com.nintendo.zaga"/>
+<category cat="game" pkg="com.gamania.lineagem"/>
+<category cat="game" pkg="com.gravity.ro.and"/>
+<category cat="game" pkg="jp.co.cygames.princessconnectredive"/>
+<category cat="game" pkg="com.dena.a12026418"/>
+<category cat="game" pkg="com.netmarble.revolutionthm"/>
+<category cat="game" pkg="com.bandainamcoent.dblegends_ww"/>
+<category cat="game" pkg="com.netease.mrzhna"/>
+<category cat="game" pkg="com.nexon.maplem.global"/>
+<category cat="game" pkg="jp.konami.duellinks"/>
+<category cat="game" pkg="com.tencent.tmgp.speedmobile"/>
+<category cat="game" pkg="jp.co.mixi.monsterstrike"/>
+<category cat="game" pkg="com.king.candycrushsaga"/>
+<category cat="game" pkg="com.xiaomeng.fategrandorder"/>
+<category cat="game" pkg="com.pearlabyss.blackdesertm.tw2"/>
+<category cat="game" pkg="jp.mbga.a12016007.lite"/>
+<category cat="game" pkg="com.lilithgame.hgame.gp"/>
+<category cat="game" pkg="com.kabam.marvelbattle"/>
+<category cat="game" pkg="com.netmarble.mherosgb"/>
+<category cat="game" pkg="com.plarium.raidlegends"/>
+<category cat="game" pkg="jp.gungho.pad"/>
+<category cat="game" pkg="com.igg.android.lordsmobile"/>
+<category cat="game" pkg="com.nexon.spw.global"/>
+<category cat="game" pkg="com.wildspike.wormszone"/>
+<category cat="game" pkg="com.YoStarEN.AzurLane"/>
+<category cat="game" pkg="com.ea.game.nfs14_row"/>
+<category cat="game" pkg="com.blizzard.wtcg.hearthstone"/>
+<category cat="game" pkg="jp.co.mixi.monsterstrikeTW"/>
+<category cat="game" pkg="com.vespainteractive.KingsRaid"/>
+<category cat="game" pkg="tw.com.iwplay.pwm"/>
+<category cat="game" pkg="com.studiowildcard.wardrumstudios.ark"/>
+<category cat="game" pkg="com.square_enix.WOTVffbejp"/>
+<category cat="game" pkg="tw.com.szn.lz"/>
+<category cat="game" pkg="jp.co.bandainamcoent.BNEI0242"/>
+<category cat="game" pkg="tw.txwy.and.snqx"/>
+<category cat="game" pkg="com.madfingergames.legends"/>
+<category cat="game" pkg="com.square_enix.android_googleplay.dqwalkj"/>
+<category cat="game" pkg="com.mojang.minecraftpe"/>
+<category cat="game" pkg="com.eskyfun.sgsmjzgp"/>
+<category cat="game" pkg="com.netease.mrzhtw"/>
+<category cat="game" pkg="com.hound13.hundredsoul"/>
+<category cat="game" pkg="com.zlongame.vi.fzdl"/>
+<category cat="game" pkg="com.bandainamcoent.saoars"/>
+<category cat="game" pkg="com.nexon.da3.global"/>
+<category cat="game" pkg="com.gamebeans.mhmnz"/>
+<category cat="game" pkg="com.vng.autochess"/>
+<category cat="game" pkg="com.lilithgame.roc.gp.tw"/>
+<category cat="game" pkg="com.garena.game.kgid"/>
+<category cat="game" pkg="games.wfs.anothereden"/>
+<category cat="game" pkg="com.ecp.xhzgtw"/>
+<category cat="game" pkg="com.bandainamcogames.dbzdokkanww"/>
+<category cat="game" pkg="com.more.dayzsurvival.gp"/>
+<category cat="game" pkg="com.wb.goog.mkx"/>
+<category cat="game" pkg="com.mind.quiz.brain.out"/>
+<category cat="game" pkg="com.gamehivecorp.taptitans2"/>
+<category cat="game" pkg="com.iyagame.richman"/>
+<category cat="game" pkg="com.aniplex.fategrandorder.en"/>
+<category cat="game" pkg="net.wargaming.wot.blitz"/>
+<category cat="game" pkg="com.moonton.mobilehero"/>
+<category cat="game" pkg="com.bandainamcoent.imas_millionlive_theaterdays"/>
+<category cat="game" pkg="com.fantome.penguinisle"/>
+<category cat="game" pkg="com.nekki.shadowfight3"/>
+<category cat="game" pkg="com.garena.game.hdltw"/>
+<category cat="game" pkg="com.bbgame.tera.gp"/>
+<category cat="game" pkg="com.linecorp.LGRGS"/>
+<category cat="game" pkg="com.square_enix.android_googleplay.RSRS"/>
+<category cat="game" pkg="com.square_enix.android_googleplay.FFBEWW"/>
+<category cat="game" pkg="com.playrix.homescapes"/>
+<category cat="game" pkg="com.pixonic.wwr"/>
+<category cat="game" pkg="com.roblox.client"/>
+<category cat="game" pkg="com.miHoYo.bh3rdJP"/>
+<category cat="game" pkg="jp.colopl.wcat"/>
+<category cat="game" pkg="com.netease.idv.googleplay"/>
+<category cat="game" pkg="com.ea.games.r3_row"/>
+<category cat="game" pkg="com.neowizgames.game.browndust.srpg.global"/>
+<category cat="game" pkg="com.moonactive.coinmaster"/>
+<category cat="game" pkg="com.miniclip.eightballpool"/>
+<category cat="game" pkg="com.klab.bleach"/>
+<category cat="game" pkg="com.t2ksports.nba2k20and"/>
+<category cat="game" pkg="com.ea.gp.fifamobile"/>
+<category cat="game" pkg="com.ngame.allstar.eu"/>
+<category cat="game" pkg="com.dragonest.autochess.google"/>
+<category cat="game" pkg="com.onmyoji.hmt2"/>
+<category cat="game" pkg="com.herogame.gplay.lastdayrulessurvival"/>
+<category cat="game" pkg="com.bandainamcoent.gb_asia"/>
+<category cat="game" pkg="com.kingsgroup.sos"/>
+<category cat="game" pkg="com.netmarble.nanatsunotaizai"/>
+<category cat="game" pkg="zombie.survival.craft.z"/>
+<category cat="game" pkg="jp.co.craftegg.band"/>
+<category cat="game" pkg="com.netease.g104tw.tw"/>
+<category cat="game" pkg="com.tencent.iglite"/>
+<category cat="game" pkg="com.naturalmotion.customstreetracer2"/>
+<category cat="game" pkg="com.xdg.and.wll"/>
+<category cat="game" pkg="com.bandainamcogames.dbzdokkan"/>
+<category cat="game" pkg="com.tw.king"/>
+<category cat="game" pkg="tw.wonderplanet.CrashFever"/>
+<category cat="game" pkg="com.GREMORY.ActionTaimanin"/>
+<category cat="game" pkg="com.ngelgames.hcglobal"/>
+<category cat="game" pkg="org.ppsspp.ppsspp"/>
+<category cat="game" pkg="com.playrix.gardenscapes"/>
+<category cat="game" pkg="com.supercell.hayday"/>
+<category cat="game" pkg="com.egame.zsxy"/>
+<category cat="game" pkg="th.in.siamgame.ggplay.lqsea"/>
+<category cat="game" pkg="com.nintendo.zaka"/>
+<category cat="game" pkg="com.tencent.tmgp.sskeus"/>
+<category cat="game" pkg="com.sunborn.girlsfrontline.jp"/>
+<category cat="game" pkg="com.nhnent.SKQUEST"/>
+<category cat="game" pkg="com.foxnextgames.m3"/>
+<category cat="game" pkg="com.cydonia.asharmdolls"/>
+<category cat="game" pkg="com.tencent.godgame"/>
+<category cat="game" pkg="com.peakx.stickfight.and.inter"/>
+
+
+<!-- CN -->
+
+
+<!-- <category cat="app_store" pkg="com.tencent.android.qqdownloader"/> -->
+<!-- <category cat="app_store" pkg="com.tencent.southpole.appstore"/> -->
+<!-- <category cat="app_store" pkg="com.android.vending"/> -->
+<!-- <category cat="app_store" pkg="com.qihoo.appstore"/> -->
+
+<!-- <category cat="cloud_disk" pkg="com.baidu.netdisk"/> -->
+<!-- <category cat="cloud_disk" pkg="com.qq.qcloud"/> -->
+<!-- <category cat="cloud_disk" pkg="com.google.android.apps.docs"/> -->
+<!-- <category cat="cloud_disk" pkg="com.ctfile"/> -->
+
+<category cat="downloader" pkg="com.xunlei.downloadprovider"/>
+
+<category cat="health" pkg="com.gotokeep.keep"/>
+<!-- <category cat="health" pkg="com.xiaomi.hm.health"/> -->
+<!-- <category cat="health" pkg="com.huawei.health"/> -->
+<category cat="health" pkg="com.HBuilder.integrate"/>
+<category cat="health" pkg="me.chunyu.Pedometer"/>
+<category cat="health" pkg="com.codoon.gps"/>
+
+<!-- <category cat="mail_box" pkg="com.tencent.androidqqmail"/> -->
+<!-- <category cat="mail_box" pkg="com.google.android.gm"/> -->
+<!-- <category cat="mail_box" pkg="com.netease.mail"/> -->
+
+<category cat="map" pkg="com.autonavi.minimap"/>
+<category cat="map" pkg="com.baidu.BaiduMap"/>
+<category cat="map" pkg="com.sdu.didi.psnger"/>
+<category cat="map" pkg="com.tencent.map"/>
+<!-- <category cat="map" pkg="com.google.android.apps.maps"/> -->
+<category cat="map" pkg="com.jingyao.easybike"/>
+<category cat="map" pkg="com.didapinche.booking"/>
+<category cat="map" pkg="com.yiche.autoeasy"/>
+<category cat="map" pkg="com.google.earth"/>
+<!-- <category cat="map" pkg="com.grabtaxi.passenger"/> -->
+
+<category cat="music" pkg="com.netease.cloudmusic"/>
+<category cat="music" pkg="com.tencent.qqmusic"/>
+<category cat="music" pkg="com.kugou.android"/>
+<category cat="music" pkg="com.tencent.karaoke"/>
+<category cat="music" pkg="com.ximalaya.ting.android"/>
+<category cat="music" pkg="com.shoujiduoduo.ringtone"/>
+<category cat="music" pkg="cn.kuwo.player"/>
+<category cat="music" pkg="com.kugou.android.ringtone"/>
+<category cat="music" pkg="com.tencent.radio"/>
+<category cat="music" pkg="fm.xiami.main"/>
+<category cat="music" pkg="bubei.tingshu"/>
+<category cat="music" pkg="com.ximalaya.ting.lite"/>
+
+<!-- <category cat="social" pkg="com.tencent.mm"/> -->
+<!-- <category cat="social" pkg="com.tencent.mobileqq"/> -->
+<category cat="social" pkg="com.baidu.tieba"/>
+<!-- <category cat="social" pkg="com.facebook.katana"/> -->
+<category cat="social" pkg="com.p1.mobile.putong"/>
+<category cat="social" pkg="com.immomo.momo"/>
+<category cat="social" pkg="com.xingin.xhs"/>
+<category cat="social" pkg="com.alibaba.android.rimet"/>
+<category cat="social" pkg="cn.soulapp.android"/>
+<!-- <category cat="social" pkg="com.facebook.orca"/> -->
+<category cat="social" pkg="com.huawei.hwid"/>
+<!-- <category cat="social" pkg="com.instagram.android"/> -->
+<!-- <category cat="social" pkg="com.twitter.android"/> -->
+<category cat="social" pkg="com.tencent.wework"/>
+<category cat="social" pkg="com.sup.android.superb"/>
+<category cat="social" pkg="com.netease.gl"/>
+<!-- <category cat="social" pkg="com.whatsapp"/> -->
+<!-- <category cat="social" pkg="com.zing.zalo"/> -->
+<category cat="social" pkg="com.qzone"/>
+<category cat="social" pkg="cn.neoclub.uki"/>
+<category cat="social" pkg="com.sixjoy.cymini"/>
+<!-- <category cat="social" pkg="jp.naver.line.android"/> -->
+<category cat="social" pkg="com.fantablade.icey"/>
+
+<category cat="tool" pkg="com.tencent.mtt"/>
+<category cat="tool" pkg="com.UCMobile"/>
+<category cat="tool" pkg="com.snda.wifilocating"/>
+<category cat="tool" pkg="com.taptap"/>
+<category cat="tool" pkg="com.tencent.tgclub"/>
+<category cat="tool" pkg="com.tencent.gamehelper.smoba"/>
+<category cat="tool" pkg="com.antutu.ABenchMark"/>
+<category cat="tool" pkg="com.baidu.searchbox"/>
+<!-- <category cat="tool" pkg="com.android.chrome"/> -->
+<category cat="tool" pkg="com.tencent.token"/>
+<category cat="tool" pkg="com.tencent.qt.qtl"/>
+<category cat="tool" pkg="com.sohu.inputmethod.sogou"/>
+<category cat="tool" pkg="com.antutu.benchmark.full"/>
+<category cat="tool" pkg="com.tencent.qqpimsecure"/>
+<category cat="tool" pkg="com.ct.client"/>
+<category cat="tool" pkg="com.greenpoint.android.mc10086.activity"/>
+<category cat="tool" pkg="com.valvesoftware.android.steam.community"/>
+<category cat="tool" pkg="com.google.ar.core"/>
+<category cat="tool" pkg="com.cainiao.wireless"/>
+<category cat="tool" pkg="com.tencent.qqpim"/>
+<category cat="tool" pkg="cn.ninegame.gamemanager"/>
+<category cat="tool" pkg="com.ludashi.benchmark"/>
+<category cat="tool" pkg="com.yitantech.gaigai"/>
+<category cat="tool" pkg="com.tencent.tgp"/>
+<category cat="tool" pkg="com.coolapk.market"/>
+<category cat="tool" pkg="com.excean.gspace"/>
+<category cat="tool" pkg="com.xmcy.hykb"/>
+<!-- <category cat="tool" pkg="com.google.android.apps.translate"/> -->
+<category cat="tool" pkg="com.quark.browser"/>
+<category cat="tool" pkg="com.moxiu.launcher"/>
+<category cat="tool" pkg="com.tencent.qt.sns"/>
+<category cat="tool" pkg="com.bilibili.comic"/>
+<category cat="tool" pkg="com.goplaycn.googleinstall"/>
+<!-- <category cat="tool" pkg="com.google.android.googlequicksearchbox"/> -->
+<category cat="tool" pkg="com.ludashi.benchmark2"/>
+<category cat="tool" pkg="com.m4399.gamecenter"/>
+<category cat="tool" pkg="com.sika524.android.quickshortcut"/>
+<category cat="tool" pkg="com.sabac.hy"/>
+<category cat="tool" pkg="com.estrongs.android.pop"/>
+<category cat="tool" pkg="com.wandoujia.phoenix2"/>
+<category cat="tool" pkg="org.zwanoo.android.speedtest"/>
+<category cat="tool" pkg="com.join.android.app.mgsim.wufun"/>
+<category cat="tool" pkg="com.qsmy.walkmonkey"/>
+<category cat="tool" pkg="com.google.android.inputmethod.latin"/>
+<category cat="tool" pkg="com.dewmobile.kuaiya"/>
+<category cat="tool" pkg="com.max.xiaoheihe"/>
+<category cat="tool" pkg="com.tencent.wifimanager"/>
+<category cat="tool" pkg="com.tianyancha.skyeye"/>
+<category cat="tool" pkg="com.tencent.gamereva"/>
+<category cat="tool" pkg="com.lion.market"/>
+<category cat="tool" pkg="com.znxh.hyhuo"/>
+<category cat="tool" pkg="com.intsig.camscanner"/>
+<category cat="tool" pkg="com.tencent.gamehelper.pg"/>
+<category cat="tool" pkg="com.xiaoji.emulator"/>
+<category cat="tool" pkg="com.google.android.gsf.login"/>
+<category cat="tool" pkg="iwan.tencent.com"/>
+<category cat="tool" pkg="com.dalongtech.cloud"/>
+<category cat="tool" pkg="com.kingroot.kinguser"/>
+<category cat="tool" pkg="cn.xiaochuankeji.zuiyouLite"/>
+<category cat="tool" pkg="com.tencent.gamehelper.dnf"/>
+<category cat="tool" pkg="com.xiaomi.mico"/>
+<category cat="tool" pkg="com.tencent.gamehelper"/>
+<category cat="tool" pkg="com.gh.gamecenter"/>
+<category cat="tool" pkg="com.znxh.zujian"/>
+<category cat="tool" pkg="com.baidu.input"/>
+<category cat="tool" pkg="sogou.mobile.explorer"/>
+<category cat="tool" pkg="com.iflytek.inputmethod"/>
+<category cat="tool" pkg="com.hhmss.verticalsearch"/>
+<category cat="tool" pkg="com.tencent.gamestick"/>
+<category cat="tool" pkg="com.rarlab.rar"/>
+<category cat="tool" pkg="com.daofeng.zuhaowan"/>
+<category cat="tool" pkg="com.vqs.iphoneassess"/>
+<!-- <category cat="tool" pkg="com.teslacoilsw.launcher"/> -->
+<category cat="tool" pkg="jp.pxv.android"/>
+<category cat="tool" pkg="cn.ji_cloud.android"/>
+<category cat="tool" pkg="com.komoxo.octopusime"/>
+<category cat="tool" pkg="com.themewallpaper.douping"/>
+<category cat="tool" pkg="com.tplink.cloudrouter"/>
+<category cat="tool" pkg="com.kugou.shiqutouch"/>
+<category cat="tool" pkg="com.baidu.appsearch"/>
+<category cat="tool" pkg="com.ucmobile.lite"/>
+<category cat="tool" pkg="com.qihoo360.mobilesafe"/>
+<category cat="tool" pkg="com.redfinger.app"/>
+<category cat="tool" pkg="com.vng.inputmethod.labankey"/>
+<category cat="tool" pkg="com.snda.lantern.wifilocating"/>
+<!-- <category cat="tool" pkg="org.mozilla.firefox"/> -->
+<category cat="tool" pkg="com.hpplay.happycast"/>
+<category cat="tool" pkg="com.daqo.wallpaper"/>
+<category cat="tool" pkg="com.tencent.gamehelper.speed"/>
+<category cat="tool" pkg="io.dcloud.H514D19D6"/>
+<category cat="tool" pkg="com.asus.unlock"/>
+<category cat="tool" pkg="by4a.setedit22"/>
+<category cat="tool" pkg="com.cn.mdv.xjsp2"/>
+<category cat="tool" pkg="com.topjohnwu.magisk"/>
+<category cat="tool" pkg="com.apkpure.aegon"/>
+<category cat="tool" pkg="com.qqc.richman"/>
+<category cat="tool" pkg="com.ericxiang.googleinstaller"/>
+<category cat="tool" pkg="com.tsy.tsy"/>
+<category cat="tool" pkg="com.aj.jav"/>
+<!-- <category cat="tool" pkg="com.shopee.vn"/> -->
+<category cat="tool" pkg="com.sj4399.googletools"/>
+<category cat="tool" pkg="com.google.android.webview"/>
+<category cat="tool" pkg="com.dsemu.drasticcn"/>
+<category cat="tool" pkg="com.finalwire.aida64"/>
+<!-- category cat="tool" pkg="jp.konami.duellinks"/> -->
+<category cat="tool" pkg="com.gaore.mobile.lyzzb2.toutiao"/>
+<!-- <category cat="game" pkg="org.ppsspp.ppsspp"/> -->
+<category cat="tool" pkg="com.github.shadowsocks"/>
+<!-- <category cat="tool" pkg="com.lbe.parallel.intl.arm64"/> -->
+<category cat="tool" pkg="com.miui.userguide"/>
+<category cat="tool" pkg="com.v2ray.ang"/>
+<category cat="tool" pkg="com.android.bbk.lockscreen3"/>
+<category cat="tool" pkg="com.asus.roggamingcenter"/>
+<category cat="tool" pkg="com.bbk.iqoo.feedback"/>
+<!-- <category cat="tool" pkg="cn.wps.moffice_eng"/> -->
+<category cat="tool" pkg="com.microsoft.office.word"/>
+<category cat="tool" pkg="com.tape.melbourne"/>
+<category cat="tool" pkg="com.microsoft.office.excel"/>
+<category cat="tool" pkg="com.sinovatech.unicom.ui"/>
+<category cat="tool" pkg="me.ele"/>
+<category cat="tool" pkg="com.sankuai.meituan.takeoutnew"/>
+<category cat="tool" pkg="com.wuba"/>
+<category cat="tool" pkg="com.tmri.app.main"/>
+<category cat="tool" pkg="com.cubic.autohome"/>
+<category cat="tool" pkg="com.dianping.v1"/>
+<category cat="tool" pkg="com.MobileTicket"/>
+<category cat="tool" pkg="com.yek.android.kfc.activitys"/>
+<category cat="tool" pkg="com.pp.assistant"/>
+<category cat="tool" pkg="com.ss.android.auto"/>
+<category cat="tool" pkg="com.hpbr.bosszhipin"/>
+<category cat="tool" pkg="com.xiaomi.smarthome"/>
+<category cat="tool" pkg="com.anjuke.android.app"/>
+<category cat="tool" pkg="com.zhaopin.social"/>
+<category cat="tool" pkg="com.yek.android.game5173"/>
+<category cat="tool" pkg="com.ganji.android.haoche_c"/>
+<category cat="tool" pkg="com.lucky.luckyclient"/>
+<category cat="tool" pkg="com.xiachufang"/>
+<category cat="tool" pkg="com.moji.mjweather"/>
+<category cat="tool" pkg="com.sankuai.movie"/>
+<category cat="tool" pkg="com.kingpoint.gmcchh"/>
+<category cat="tool" pkg="com.sf.activity"/>
+<category cat="tool" pkg="com.hippo.ehviewer"/>
+<category cat="tool" pkg="mm.cws.telenor.app"/>
+<category cat="tool" pkg="com.androidesk"/>
+<category cat="tool" pkg="yyc.xk"/>
+<category cat="tool" pkg="com.microsoft.launcher"/>
+<category cat="tool" pkg="com.shoujiduoduo.wallpaper"/>
+<category cat="tool" pkg="ctrip.android.view"/>
+<category cat="tool" pkg="com.taobao.trip"/>
+<category cat="tool" pkg="com.Qunar"/>
+<category cat="tool" pkg="com.baidu.homework"/>
+<category cat="tool" pkg="com.youdao.dict"/>
+<category cat="tool" pkg="cn.xuexi.android"/>
+<category cat="tool" pkg="com.fenbi.android.solar"/>
+<category cat="tool" pkg="com.youdao.translator"/>
+<category cat="tool" pkg="com.baidu.baidutranslate"/>
+<category cat="tool" pkg="com.able.wisdomtree"/>
+<category cat="tool" pkg="com.moocxuetang"/>
+<category cat="tool" pkg="com.mosoink.teach"/>
+<category cat="tool" pkg="com.eg.android.AlipayGphone"/>
+<category cat="tool" pkg="com.jd.jrapp"/>
+<category cat="tool" pkg="com.chinamworld.main"/>
+<category cat="tool" pkg="com.icbc"/>
+<category cat="tool" pkg="cmb.pb"/>
+<category cat="tool" pkg="com.android.bankabc"/>
+<category cat="tool" pkg="com.chinamworld.bocmbci"/>
+<category cat="tool" pkg="com.unionpay"/>
+<category cat="tool" pkg="com.cmbchina.ccd.pluto.cmbActivity"/>
+<category cat="tool" pkg="com.qihoo.loan"/>
+<category cat="tool" pkg="com.icbc.im"/>
+<category cat="tool" pkg="com.yitong.mbank.psbc"/>
+<category cat="tool" pkg="com.chinatelecom.bestpayclient"/>
+<category cat="tool" pkg="com.bankcomm.Bankcomm"/>
+<category cat="tool" pkg="com.xiaomi.loan"/>
+<category cat="tool" pkg="com.gomejr.icash"/>
+<category cat="tool" pkg="com.pingan.paces.ccms"/>
+<category cat="tool" pkg="com.duxiaoman.umoney"/>
+<category cat="tool" pkg="com.pingan.lifeinsurance"/>
+<category cat="tool" pkg="com.ppdai.loan"/>
+<category cat="tool" pkg="com.sina.weibo"/>
+<category cat="tool" pkg="com.tencent.news"/>
+<category cat="tool" pkg="com.shizhuang.duapp"/>
+<category cat="tool" pkg="com.ss.android.article.news"/>
+<category cat="tool" pkg="com.tencent.reading"/>
+<category cat="tool" pkg="com.tencent.news.lite"/>
+<category cat="tool" pkg="com.mt.mtxx.mtxx"/>
+<category cat="tool" pkg="com.lemon.lv"/>
+<category cat="tool" pkg="com.campmobile.snowcamera"/>
+<category cat="tool" pkg="com.meitu.meiyancamera"/>
+<category cat="tool" pkg="com.picsart.studio"/>
+<!-- <category cat="tool" pkg="com.google.android.apps.photos"/> -->
+<category cat="tool" pkg="com.lemon.faceu"/>
+<category cat="tool" pkg="com.gorgeous.lite"/>
+<category cat="tool" pkg="com.xunmeng.pinduoduo"/>
+<!-- <category cat="tool" pkg="com.taobao.taobao"/> -->
+<category cat="tool" pkg="com.taobao.idlefish"/>
+<category cat="tool" pkg="com.sankuai.meituan"/>
+<category cat="tool" pkg="com.jingdong.app.mall"/>
+<category cat="tool" pkg="com.taobao.litetao"/>
+<category cat="tool" pkg="com.jym.mall"/>
+<category cat="tool" pkg="com.wuba.zhuanzhuan"/>
+<category cat="tool" pkg="com.tmall.wireless"/>
+<category cat="tool" pkg="com.tencent.djcity"/>
+<category cat="tool" pkg="com.huodao.hdphone"/>
+<category cat="tool" pkg="com.suning.mobile.ebuy"/>
+<category cat="tool" pkg="com.jd.pingou"/>
+<category cat="tool" pkg="com.fenqile.fenqile"/>
+<category cat="tool" pkg="com.mengtuiapp.mall"/>
+<category cat="tool" pkg="com.achievo.vipshop"/>
+<category cat="tool" pkg="com.xiaomi.youpin"/>
+<category cat="tool" pkg="com.black.unique"/>
+<category cat="tool" pkg="com.hupu.shihuo"/>
+<category cat="tool" pkg="com.alibaba.wireless"/>
+<category cat="tool" pkg="com.xiaomi.shop"/>
+<category cat="tool" pkg="com.jzyd.coupon"/>
+<category cat="tool" pkg="com.zhihu.android"/>
+<category cat="tool" pkg="com.picacomic.fregata"/>
+<category cat="tool" pkg="com.kmxs.reader"/>
+<category cat="tool" pkg="com.qq.reader"/>
+<category cat="tool" pkg="com.tencent.weread"/>
+<category cat="tool" pkg="com.qq.ac.android"/>
+<category cat="tool" pkg="com.chaoxing.mobile"/>
+<category cat="tool" pkg="com.dragon.read"/>
+<category cat="tool" pkg="com.shuqi.controller"/>
+<!-- <category cat="tool" pkg="com.qidian.QDReader"/> -->
+<category cat="tool" pkg="com.ushaqi.zhuishushenqi.adfree"/>
+<category cat="tool" pkg="com.ushaqi.zhuishushenqi"/>
+<category cat="tool" pkg="com.kuaikan.comic"/>
+<category cat="tool" pkg="com.dmzj.manhua"/>
+<category cat="tool" pkg="com.chaozh.iReaderFree"/>
+<category cat="tool" pkg="com.aikan"/>
+<category cat="tool" pkg="com.jh.onscripter"/>
+
+<!-- <category cat="video" pkg="com.ss.android.ugc.aweme"/> -->
+<category cat="video" pkg="com.tencent.qqlive"/>
+<!-- <category cat="video" pkg="tv.danmaku.bili"/> -->
+<category cat="video" pkg="com.qiyi.video"/>
+<category cat="video" pkg="com.youku.phone"/>
+<category cat="video" pkg="com.duowan.kiwi"/>
+<category cat="video" pkg="com.smile.gifmaker"/>
+<category cat="video" pkg="air.tv.douyu.android"/>
+<category cat="video" pkg="com.tencent.weishi"/>
+<!-- <category cat="video" pkg="com.google.android.youtube"/> -->
+<category cat="video" pkg="com.ss.android.article.video"/>
+<category cat="video" pkg="com.tencent.qgame"/>
+<category cat="video" pkg="com.ss.android.ugc.aweme.lite"/>
+<category cat="video" pkg="com.duowan.mobile"/>
+<category cat="video" pkg="com.kuaishou.nebula"/>
+<category cat="video" pkg="cn.xiaochuankeji.tieba"/>
+<category cat="video" pkg="tv.acfundanmaku.video"/>
+<category cat="video" pkg="com.hunantv.imgo.activity"/>
+<category cat="video" pkg="com.jm.video"/>
+<category cat="video" pkg="com.zhongduomei.rrmj.society"/>
+<category cat="video" pkg="com.babycloud.hanju"/>
+<!-- <category cat="video" pkg="com.ss.android.ugc.trill"/> -->
+<category cat="video" pkg="com.xfplay.play"/>
+<!-- <category cat="video" pkg="com.mxtech.videoplayer.ad"/> -->
+<category cat="video" pkg="com.sohu.sohuvideo"/>
+<category cat="video" pkg="com.tencent.qqsports"/>
+<category cat="video" pkg="cn.vcinema.cinema"/>
+
+<category cat="vpn" pkg="com.qidian.openvpn"/>
+<!-- <category cat="vpn" pkg="com.findtheway"/> -->
+<!-- <category cat="vpn" pkg="com.xfx.surfvpn"/> -->
+
+<category cat="game_acc" pkg="com.netease.uu"/>
+<category cat="game_acc" pkg="com.njh.biubiu"/>
+<category cat="game_acc" pkg="com.tencent.cmocmna"/>
+<category cat="game_acc" pkg="cn.wsds.gamemaster"/>
+<category cat="game_acc" pkg="com.qeeyou.app.accelerator"/>
+
+<category cat="game" pkg="com.huluxia.gametools"/>
+<category cat="game" pkg="com.huati"/>
+<category cat="game" pkg="com.tencent.tmgp.sgamece"/>
+<category cat="game" pkg="com.netease.x19"/>
+<!-- <category cat="game" pkg="com.tencent.tmgp.sgame"/> -->
+<!-- <category cat="game" pkg="com.tencent.tmgp.pubgmhd"/> -->
+<category cat="game" pkg="com.tencent.tmgp.redfox"/>
+<category cat="game" pkg="com.leiting.lostcastle.leiting"/>
+<!-- <category cat="game" pkg="com.tencent.tmgp.speedmobile"/> -->
+<category cat="game" pkg="com.tencent.tmgp.cf"/>
+<category cat="game" pkg="com.tencent.af"/>
+<category cat="game" pkg="com.ilongyuan.autochess.ly_pre"/>
+<category cat="game" pkg="com.google.android.play.games"/>
+<category cat="game" pkg="com.qqgame.hlddz"/>
+<category cat="game" pkg="com.xd.WuLaLa"/>
+<category cat="game" pkg="com.tencent.lzhx"/>
+<category cat="game" pkg="com.tencent.KiHan"/>
+<category cat="game" pkg="com.bilibili.gcg2.bili"/>
+<category cat="game" pkg="com.zlongame.ov.sg"/>
+<!-- <category cat="game" pkg="com.tencent.ig"/> -->
+<category cat="game" pkg="com.tencent.tmgp.WePop"/>
+<category cat="game" pkg="com.tencent.tmgp.bh3"/>
+<category cat="game" pkg="com.baitian.pjxx.zw.bt"/>
+<category cat="game" pkg="com.miHoYo.enterprise.NGHSoD"/>
+<!-- <category cat="game" pkg="com.studiowildcard.wardrumstudios.ark"/> -->
+<!-- <category cat="game" pkg="com.blizzard.wtcg.hearthstone"/> -->
+<category cat="game" pkg="com.ChillyRoom.DungeonShooter"/>
+<category cat="game" pkg="com.tencent.lolm"/>
+<category cat="game" pkg="com.hypergryph.arknights"/>
+<category cat="game" pkg="com.tencent.pao"/>
+<category cat="game" pkg="com.tencent.tmgp.wdsj666"/>
+<category cat="game" pkg="com.tencent.wmsj"/>
+<category cat="game" pkg="com.tencent.tmgp.supercell.clashofclans"/>
+<category cat="game" pkg="com.tencent.tmgp.aligames.kybc"/>
+<category cat="game" pkg="com.qqgame.happymj"/>
+<category cat="game" pkg="com.netease.onmyoji"/>
+<category cat="game" pkg="com.tencent.tmgp.jx3m"/>
+<category cat="game" pkg="com.tencent.tmgp.yongyong.mrzh"/>
+<!-- <category cat="game" pkg="com.gameloft.android.ANMP.GloftA9HM"/> -->
+<category cat="game" pkg="com.tencent.tmgp.secondgalaxy"/>
+<category cat="game" pkg="com.hermes.cgame"/>
+<category cat="game" pkg="com.tencent.shihun.android"/>
+<category cat="game" pkg="com.tencent.raziel"/>
+<!-- <category cat="game" pkg="com.mobile.legends"/> -->
+<category cat="game" pkg="com.happyelements.AndroidAnimal.qq"/>
+<category cat="game" pkg="com.tencent.tmgp.ylkjbzdx"/>
+<category cat="game" pkg="com.tencent.qqgame.xq"/>
+<category cat="game" pkg="com.netease.mrzh"/>
+<category cat="game" pkg="com.tencent.tmgp.supercell.clashroyale"/>
+<category cat="game" pkg="com.tencent.game.rhythmmaster"/>
+<category cat="game" pkg="com.ztgame.bob"/>
+<category cat="game" pkg="com.android"/>
+<category cat="game" pkg="com.bilibili.fatego"/>
+<category cat="game" pkg="com.superevilmegacorp.game"/>
+<category cat="game" pkg="com.tencent.tmgp.dwrg"/>
+<category cat="game" pkg="com.tencent.tmgp.zzys"/>
+<category cat="game" pkg="com.tencent.tmgp.yys.zqb"/>
+<category cat="game" pkg="com.bilibili.azurlane"/>
+<category cat="game" pkg="bf.sgs.hdexp"/>
+<category cat="game" pkg="com.tanyu.skppb.gp"/>
+<category cat="game" pkg="com.tencent.hjzqgame"/>
+<category cat="game" pkg="com.tencent.tmgp.yinhan.skzh"/>
+<category cat="game" pkg="com.tencent.yoozoo.got.wintercoming"/>
+<category cat="game" pkg="com.ginicat.sweet"/>
+<category cat="game" pkg="com.yinhan.hunter.tx"/>
+<category cat="game" pkg="com.tencent.game.VXDGame"/>
+<category cat="game" pkg="com.tencent.tmgp.setagames.survivordangerzone"/>
+<category cat="game" pkg="com.rockstargames.gtasa"/>
+<category cat="game" pkg="com.gbits.jasmin"/>
+<category cat="game" pkg="com.aligames.kuang.kybc"/>
+<category cat="game" pkg="com.netease.wyclx"/>
+<category cat="game" pkg="com.tencent.shootgame"/>
+<category cat="game" pkg="com.gameloft.android.ANMP.GloftA8HM"/>
+<category cat="game" pkg="com.aligames.kuang.kybc.aligames"/>
+<category cat="game" pkg="com.tencent.tmgp.yqqskp"/>
+<category cat="game" pkg="com.tencent.tmgp.dragonnest"/>
+<category cat="game" pkg="com.ztgame.yyzy"/>
+<category cat="game" pkg="com.qqgame.mic"/>
+<category cat="game" pkg="com.feishu.zmxx"/>
+<category cat="game" pkg="com.tencent.LEGOCUBE"/>
+<!-- <category cat="game" pkg="zombie.survival.craft.z"/> -->
+<category cat="game" pkg="com.avalon.cave.cn.leiting"/>
+<category cat="game" pkg="com.sszg.sy"/>
+<category cat="game" pkg="catch_.me_.if_.you_.can_"/>
+<category cat="game" pkg="com.ejoy.f2.inhouse.aligames"/>
+<category cat="game" pkg="com.kiloo.subwaysurf"/>
+<category cat="game" pkg="com.tencent.pocket"/>
+<category cat="game" pkg="com.east2west.game60seconds"/>
+<category cat="game" pkg="com.epicgames.portal"/>
+<category cat="game" pkg="com.tencent.tmgp.yongyong.lztg"/>
+<!-- <category cat="game" pkg="com.habby.archero"/> -->
+<category cat="game" pkg="com.netease.lztg"/>
+<category cat="game" pkg="com.tencent.tmgp.minitech.miniworld"/>
+<category cat="game" pkg="com.netease.dwrg"/>
+<category cat="game" pkg="com.tencent.tmgp.hjol"/>
+<category cat="game" pkg="com.tencent.swy"/>
+<category cat="game" pkg="com.tencent.tmgp.pvz2hdtxyyb"/>
+<category cat="game" pkg="com.tencent.tmgp.wec"/>
+<category cat="game" pkg="com.tencent.tmgp.coslegend"/>
+<category cat="game" pkg="com.sofunny.Sausage"/>
+<category cat="game" pkg="com.tencent.jgm"/>
+<category cat="game" pkg="com.kunpo.loner"/>
+<category cat="game" pkg="com.makebestgame.blacksmithstory"/>
+<category cat="game" pkg="com.tencent.tmgp.dpcq"/>
+<category cat="game" pkg="com.tencent.tmgp.wpzz"/>
+<category cat="game" pkg="com.gameloft.android.ANMP.GloftGGHM"/>
+<category cat="game" pkg="com.tencent.tmgp.tom"/>
+<category cat="game" pkg="com.tencent.tmgp.tstl"/>
+<category cat="game" pkg="com.tencent.clover"/>
+<category cat="game" pkg="com.tencent.tmgp.tiles2"/>
+<category cat="game" pkg="com.glee.policestories"/>
+<category cat="game" pkg="com.netease.stzb.netease"/>
+<category cat="game" pkg="com.tencent.tmgp.kaopu.jzpaj"/>
+<category cat="game" pkg="com.netease.AVALON"/>
+<category cat="game" pkg="com.wepie.snake.tencent"/>
+<category cat="game" pkg="com.zz.mm"/>
+<category cat="game" pkg="com.imangi.templerun2"/>
+<category cat="game" pkg="com.tencent.tmgp.sszg"/>
+<category cat="game" pkg="com.maobu.jiushizhuunity"/>
+<category cat="game" pkg="com.netease.my"/>
+<!-- <category cat="game" pkg="com.mojang.minecraftpe"/> -->
+<category cat="game" pkg="com.agile.game.taptap"/>
+<category cat="game" pkg="com.tencent.game.SSGame"/>
+<category cat="game" pkg="com.cmge.vgame.aligames"/>
+<category cat="game" pkg="com.leiting.elona"/>
+<category cat="game" pkg="com.c2vl.kgamebox"/>
+<category cat="game" pkg="com.fingersoft.hillclimb.noncmcc"/>
+<!-- <category cat="game" pkg="com.nintendo.zaka"/> -->
+<category cat="game" pkg="com.tencent.tmgp.jxqy"/>
+<category cat="game" pkg="com.tencent.tmgp.qqx5"/>
+<category cat="game" pkg="com.netease.frxy"/>
+<category cat="game" pkg="com.tencent.tmgp.mt4"/>
+<category cat="game" pkg="com.tencent.tmgp.stzb"/>
+<category cat="game" pkg="com.d9work.mdrpg"/>
+<!-- <category cat="game" pkg="com.garena.game.kgtw"/> -->
+<category cat="game" pkg="com.hegu.dnl.mg"/>
+<category cat="game" pkg="com.mservice.momotransfer"/>
+<!-- <category cat="game" pkg="com.nekki.shadowfight3"/> -->
+<category cat="game" pkg="com.zlongame.sg.aligames"/>
+<category cat="game" pkg="com.ludashi.aibench"/>
+<category cat="game" pkg="com.popcap.pvz2cthd"/>
+<category cat="game" pkg="com.gamedevltd.wwh"/>
+<category cat="game" pkg="com.tykj.sjclhd"/>
+<!-- <category cat="game" pkg="jp.konami.pesam"/> -->
+<category cat="game" pkg="com.gameduchy.jdzdDevelop"/>
+<category cat="game" pkg="com.glee.zombiewarcn"/>
+<category cat="game" pkg="com.tapfreegame.newvehicle"/>
+<!-- <category cat="game" pkg="com.nianticlabs.pokemongo"/> -->
+<category cat="game" pkg="com.tencent.tmgp.baitian.alx"/>
+<category cat="game" pkg="com.yodo1.SkiSafari.TXYYB_01"/>
+<category cat="game" pkg="com.zmingxiong.luckundergroundcity"/>
+<category cat="game" pkg="com.and.games505.TerrariaPaid"/>
+<category cat="game" pkg="cn.babayu.hotvideo"/>
+<!-- <category cat="game" pkg="com.madfingergames.legends"/> -->
+<category cat="game" pkg="com.sleeeeepfly.longswords"/>
+<category cat="game" pkg="vn.tiki.app.tikiandroid"/>
+<category cat="game" pkg="com.tencent.tmgp.mhxy.sqsy"/>
+<category cat="game" pkg="com.yingxiong.gw.Android.hero"/>
+<category cat="game" pkg="com.gameloft.android.ANMP.GloftM5HM"/>
+<category cat="game" pkg="com.tongzhuo.tongzhuogame"/>
+<category cat="game" pkg="com.bf.sgs.hdexp"/>
+<!-- <category cat="game" pkg="com.hound13.hundredsoul"/> -->
+<category cat="game" pkg="com.qijin189.huosuapp"/>
+<category cat="game" pkg="com.tencent.tmgp.pandadastudio.ninja3"/>
+<category cat="game" pkg="com.ea.games.r3_na"/>
+<!-- <category cat="game" pkg="com.dts.freefireth"/> -->
+<!-- <category cat="game" pkg="com.ea.games.r3_row"/> -->
+<category cat="game" pkg="com.kleientertainment.doNotStarveShipwrecked"/>
+<category cat="game" pkg="com.tencent.gwgo"/>
+<category cat="game" pkg="com.tencent.tmgp.hdqyly"/>
+<category cat="game" pkg="com.tencent.tmgp.sskgame"/>
+<category cat="game" pkg="com.bricksgame.brickscrusher.jrtt"/>
+<category cat="game" pkg="com.pikpok.dr2.play"/>
+<category cat="game" pkg="com.tencent.fifamobile"/>
+<category cat="game" pkg="com.tencent.peng"/>
+<category cat="game" pkg="com.ozachi.keyboardMan"/>
+<category cat="game" pkg="com.smwl.x7market"/>
+<category cat="game" pkg="com.tencent.tmgp.dragonball"/>
+<category cat="game" pkg="com.tencent.tmgp.zhuxian"/>
+<category cat="game" pkg="com.kqengine.meet"/>
+<category cat="game" pkg="com.netease.blqx"/>
+<!-- <category cat="game" pkg="com.supercell.clashofclans"/> -->
+<category cat="game" pkg="com.heimai666.ninja"/>
+<category cat="game" pkg="com.tencent.ngame.chty"/>
+<category cat="game" pkg="com.tencent.tmgp.AndroidAnimal"/>
+<category cat="game" pkg="com.theDevilBook.mercenaryGroup"/>
+<category cat="game" pkg="com.lywl.xbxxz"/>
+<category cat="game" pkg="com.tencent.tmgp.dldlwyly"/>
+<category cat="game" pkg="com.ultraandre.pccreator"/>
+<category cat="game" pkg="com.avalon.caveonline.cn.leiting"/>
+<category cat="game" pkg="com.digitalsky.girlsfrontline.cn"/>
+<category cat="game" pkg="com.miHoYo.bh3.uc"/>
+<category cat="game" pkg="com.tencent.hyrzol"/>
+<category cat="game" pkg="com.tencent.xriver"/>
+<category cat="game" pkg="com.FourFire.InfiniteSoul"/>
+<!-- <category cat="game" pkg="com.stove.epic7.google"/> -->
+<category cat="game" pkg="com.tencent.kof"/>
+<category cat="game" pkg="com.tencent.tmgp.yongyong.clx"/>
+<category cat="game" pkg="com.join.android.app.mgsim"/>
+<category cat="game" pkg="com.jzyx.dyqlbih"/>
+<category cat="game" pkg="com.rockstargames.gtavc"/>
+<category cat="game" pkg="com.baitian.alx.alxsy.bt"/>
+<category cat="game" pkg="com.MushREB.Ballex"/>
+<category cat="game" pkg="com.gameloft.android.ANMP.GloftM4HM"/>
+<category cat="game" pkg="com.aligames.xs.lingxi"/>
+<category cat="game" pkg="com.elevenbitstudios.twommobile"/>
+<category cat="game" pkg="com.mewe.wolf"/>
+<!-- <category cat="game" pkg="com.wb.goog.mkx"/> -->
+<category cat="game" pkg="com.ea.game.pvz2_row"/>
+<category cat="game" pkg="com.pandadastudio.ninjamustdie3"/>
+<category cat="game" pkg="com.tencent.lycqsh"/>
+<category cat="game" pkg="com.happyelements.AndroidAnimal"/>
+<category cat="game" pkg="com.netease.hyxd"/>
+<category cat="game" pkg="com.qxlz.moblie.syqxlz"/>
+<category cat="game" pkg="com.supercell.clashofclans.uc"/>
+<category cat="game" pkg="com.ea.game.simcitymobile_row"/>
+<category cat="game" pkg="com.nyyqq.jrtt"/>
+<category cat="game" pkg="com.tencent.freestyle"/>
+<category cat="game" pkg="com.tencent.tmgp.kof98"/>
+<category cat="game" pkg="com.abc.agame.guanwang"/>
+<!-- <category cat="game" pkg="com.ea.game.nfs14_row"/> -->
+<!-- <category cat="game" pkg="com.nemo.vidmate"/> -->
+<!-- <category cat="game" pkg="com.playrix.homescapes"/> -->
+<category cat="game" pkg="com.soma.ml"/>
+<category cat="game" pkg="com.tencent.tmgp.playcrab.achillesrxj"/>
+<category cat="game" pkg="com.yinhan.skzh.yinhan"/>
+<category cat="game" pkg="com.ea.games.nfs13_row"/>
+<category cat="game" pkg="com.pujiadev.ReversEstory"/>
+<category cat="game" pkg="com.tencent.stormisland"/>
+<category cat="game" pkg="catobyte.superbunnyman"/>
+<category cat="game" pkg="com.ea.simcitymobile.tx"/>
+<category cat="game" pkg="com.feiyu.carrot3"/>
+<category cat="game" pkg="com.netease.h48"/>
+<category cat="game" pkg="com.tencent.WeFire"/>
+<category cat="game" pkg="com.tencent.feiji"/>
+<category cat="game" pkg="fi.twomenandadog.walkmaster.xsl"/>
+<category cat="game" pkg="com.box.aiqu"/>
+<category cat="game" pkg="com.ea.game.pvzfree_row"/>
+<category cat="game" pkg="com.shandagames.falloutshelter"/>
+<category cat="game" pkg="com.tencent.tmgp.zjzk"/>
+<category cat="game" pkg="mm.com.mptvas"/>
+<category cat="game" pkg="com.habby.cnarchero.taptap"/>
+<category cat="game" pkg="com.tencent.tmgp.yxdzz"/>
+<category cat="game" pkg="com.alfagame.GodBlessMyFamily"/>
+<category cat="game" pkg="com.cmplay.tiles2"/>
+<!-- <category cat="game" pkg="com.tencent.godgame"/> -->
+<category cat="game" pkg="com.tencent.tmgp.NBA"/>
+<!-- <category cat="game" pkg="tw.sonet.princessconnect"/> -->
+<category cat="game" pkg="com.dsemu.drastic"/>
+<category cat="game" pkg="com.rovio.baba"/>
+<category cat="game" pkg="com.HirayaSpace.SevenYearsCH"/>
+<category cat="game" pkg="com.izhaohe.heroes_taptap"/>
+<category cat="game" pkg="com.noodlecake.gettingoverit"/>
+<category cat="game" pkg="com.qx.qgbox"/>
+<category cat="game" pkg="com.taojin.origin"/>
+<category cat="game" pkg="com.tencent.tmgp.cmge.vgame"/>
+<category cat="game" pkg="com.tencent.tmgp.ydcsly"/>
+<category cat="game" pkg="com.mcprohosting.beam"/>
+<!-- <category cat="game" pkg="com.ngame.allstar.eu"/> -->
+<category cat="game" pkg="com.tencent.tmgp.ccysh"/>
+<category cat="game" pkg="com.tencent.tmgp.dtszj"/>
+<category cat="game" pkg="com.yomob.idlefort3D.jrtt"/>
+<category cat="game" pkg="com.miHoYo.HSoDv2Original"/>
+<category cat="game" pkg="com.miniclip.plagueinc"/>
+<category cat="game" pkg="com.supercell.boombeach.bb"/>
+<category cat="game" pkg="com.tencent.cldts"/>
+<category cat="game" pkg="com.tencent.tmgp.arrowio"/>
+<category cat="game" pkg="com.VCB"/>
+<category cat="game" pkg="com.carrot.carrotfantasy"/>
+<category cat="game" pkg="com.gbits.atm.leiting"/>
+<category cat="game" pkg="com.kleientertainment.doNotStarvePocket"/>
+
+
+
+</fz_app_category>

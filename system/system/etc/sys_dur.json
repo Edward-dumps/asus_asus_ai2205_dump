@@ -1,0 +1,43 @@
+{
+	"displayname":"sys durable",
+	"configurations": [
+
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"UCLAMP_CLAMP",
+					"code":"0x43C10000",
+					"value":"60",
+					"valueset": [
+					  "20","30","40","50","60","70","80"
+					]
+				},
+				{
+					"name":"/sys/kernel/msm_performance/parameters/cpu_max_freq 0-3",
+					"code":"0x40804100",
+					"value":"1804",
+					"valueset": [
+						"556", "806", "1056", "1228", "1324", "1440", "1555", "1670", "1804"
+					]
+				},
+				{
+					"name":"/sys/kernel/msm_performance/parameters/cpu_max_freq 4-6",
+					"code":"0x40804000",
+					"value":"2227",
+					"valueset": [
+						"633", "998", "1324", "1651", "1881", "2112", "2342", "2572", "2745"
+					]
+				},
+				{
+					"name":"/sys/kernel/msm_performance/parameters/cpu_max_freq 7",
+					"code":"0x40804200",
+					"value":"2592",
+					"valueset": [
+						"787", "1171", "1536", "1766", "1996", "2246", "2476", "2707", "2918", "3187"
+					]
+				}
+			]
+		}
+	]
+}

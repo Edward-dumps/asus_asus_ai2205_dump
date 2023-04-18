@@ -1,0 +1,38 @@
+
+
+# TwinApps
+
+on property:asus.twinapp.cmd=initmode
+    chown root media_rw /data/media/0/TwinApps
+    chmod 0500 /data/media/0/TwinApps
+    chown media_rw media_rw /data/media/2357
+    chmod 0775 /data/media/2357
+
+on property:asus.twinapp.cmd=mountmode
+    wait /data/media/0/TwinApps
+    chown media_rw media_rw /data/media/0/TwinApps
+    chmod 0775 /data/media/0/TwinApps
+    chown media_rw media_rw /data/media/2357
+    chmod 0775 /data/media/2357
+
+on property:dev.bootcomplete=1 && property:sys.user.0.ce_available=true
+    wait /data/media/0
+    rmdir /data/media/0/TwinApps
+    mkdir /data/media/0/TwinApps 0500 root media_rw
+    setprop asus.twinapp.cmd initmode
+
+on property:asus.twinapp.cmd=onmount
+    rmdir /data/media/0/TwinApps
+    mkdir /data/media/0/TwinApps 0775 2357 media_rw
+    chmod 0775 /data/media/0/TwinApps
+    chown media_rw media_rw /data/media/0/TwinApps
+    chmod 0775 /data/media/2357
+    chown media_rw media_rw /data/media/2357
+    mount f2fs /data/media/2357 /data/media/0/TwinApps nosuid nodev bind
+    setprop asus.twinapp.cmd mountmode
+
+on property:asus.twinapp.cmd=onumount
+    dumount /data/media/0/TwinApps
+    setprop asus.twinapp.cmd initmode
+
+

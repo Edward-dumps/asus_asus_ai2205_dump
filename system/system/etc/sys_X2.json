@@ -1,0 +1,95 @@
+{
+	"displayname":"sys X",
+	"configurations": [
+		{
+			"category":"Temperature",
+			"items": [
+				{
+					"name":"Temperature",
+					"code":"0x48000000",
+					"value":"94",
+					"valueset": [
+					  "0","99"
+					]
+				}
+			]
+		},
+		{
+			"category":"CPU",
+			"items": [
+				{
+					"name":"/proc/sys/walt/sched_upmigrate & sched_downmigrate (Silver-Gold)",
+					"code":"0x40CE0000",
+					"value":"5242950",
+					"valueset": [
+						"0x00500046"
+					]
+				},
+				{
+					"name":"/proc/sys/walt/sched_upmigrate & sched_downmigrate (Gold-Prime)",
+					"code":"0x40CE0200",
+					"value":"5242950",
+					"valueset": [
+						"0x00500046"
+					]
+				},
+				{
+					"name":"/proc/sys/walt/sched_group_upmigrate & downmigrate",
+					"code":"0x40CF4000",
+					"value":"5242950",
+					"valueset": [
+						"0x00500046"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_load",
+					"code":"0x41440100",
+					"value":"80",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq",
+					"code":"0x4143C100",
+					"value":"1344",
+					"valueset": [
+						"1363", "1574", "1785"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_load",
+					"code":"0x41440000",
+					"value":"80",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy4/walt/hispeed_freq",
+					"code":"0x4143C000",
+					"value":"1785",
+					"valueset": [
+						"1881", "2112", "2496"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_load",
+					"code":"0x41440200",
+					"value":"80",
+					"valueset": [
+						"90", "80", "70", "60", "50", "40", "30"
+					]
+				},
+				{
+					"name":"/sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_freq",
+					"code":"0x4143C200",
+					"value":"1977",
+					"valueset": [
+						"2284", "2630", "2995"
+					]
+				}
+			]
+		}
+	]
+}

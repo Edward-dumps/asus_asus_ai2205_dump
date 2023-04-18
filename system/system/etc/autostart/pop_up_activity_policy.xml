@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policy>
+    <app pkg="com.bankcomm.Bankcomm" />
+    <app pkg="com.qq.qcloud" />
+    <app pkg="com.ss.android.article.news" />
+    <app pkg="com.ss.android.article.lite" />
+    <app pkg="com.jm.video" />
+    <app pkg="com.qihoo.appstore" />
+    <app pkg="com.snda.wifilocating" />
+    <app pkg="com.snda.lantern.wifilocating" />
+    <app pkg="com.baidu.netdisk" />
+    <app pkg="com.tencent.reading" />
+    <app pkg="com.qihoo.browser" />
+    <app pkg="com.qihoo360.mobilesafe" />
+    <app pkg="com.UCMobile" />
+    <app pkg="com.tencent.karaoke" />
+</policy>
+

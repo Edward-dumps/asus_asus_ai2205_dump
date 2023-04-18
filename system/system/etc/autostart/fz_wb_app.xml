@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fz_wb_app>
+
+<version number="2"/>
+
+<!-- white app sample -->
+<!-- <wb_app type="w_app" name="com.android.settings"/> -->
+
+<wb_app type="b_app" name="com.tencent.qqgame.xq"/>
+
+<wb_app type="gms_app" name="com.android.vending" />
+
+<wb_app type="w_app" name="com.github.uiautomator"/>
+<wb_app type="w_app" name="com.github.uiautomator.test"/>
+<wb_app type="w_app" name="com.termux"/>
+<wb_app type="w_app" name="com.asus.syncv2"/>
+<wb_app type="w_app" name="com.teamviewer.quicksupport.market"/>
+<wb_app type="w_app" name="com.teamviewer.teamviewer.market.mobile"/>
+</fz_wb_app>
