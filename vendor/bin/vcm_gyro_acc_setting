@@ -1,0 +1,28 @@
+#!/system/bin/sh
+#ASUS_BSP code in asus_actuator.c
+
+vcm_enable=`cat /proc/driver/vcm_enable`
+
+i=0
+if [ ${vcm_enable} -eq "1" ]; then
+	vcm_acc_offset=`cat /proc/driver/vcm_gyro_offset_set`
+	echo ${vcm_acc_offset:0:4}
+	if [ ${vcm_acc_offset:0:4} = "PASS" ]; then
+		echo ${vcm_acc_offset:5:10} > ~/vendor/factory/vcm_acc_data.txt
+	fi
+
+	while [ ${vcm_acc_offset:0:4} != "PASS" ] && [ "${i}" -lt "3" ]; do
+		vcm_acc_offset=`cat /proc/driver/vcm_gyro_offset_set`
+		#echo "dowhile"
+		i=$(($i+1))
+	done
+	#if [ "${i}" -lt "10" ]; then
+	#	echo "1"
+	#	cat /proc/driver/vcm_acc_data > ~/vendor/factory/vcm_acc_data.txt
+	#else
+	#	echo "0"
+	#fi
+else
+	echo "vcm not enable"
+fi
+

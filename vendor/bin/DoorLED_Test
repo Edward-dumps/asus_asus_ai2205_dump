@@ -1,0 +1,122 @@
+#!/vendor/bin/sh
+
+if [ "$#" -ge 3 ]; then
+	echo "Parameter not avalid!"
+	echo 0
+	exit
+fi
+
+if [ "$#" -eq 2 ]; then
+	BRIGHTNESS=$2;
+else
+	BRIGHTNESS=255;
+fi
+
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (Red), 2 (Green), 3 (Blue), 4(White)"
+	exit
+fi
+
+if [ "$CMD" -lt "0" -o "$CMD" -gt "4" ]; then
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (Red), 2 (Green), 3 (Blue), 4(White)"
+	exit
+fi
+
+VDD=`cat /sys/class/leds/aura_sync/VDD`
+
+if [ "${VDD}" == "0" ]; then
+    echo "[AURA_MS51] Enable VDD" > /dev/kmsg
+    echo 1 > /sys/class/leds/aura_sync/VDD
+    sleep 1
+else
+    echo "[AURA_MS51] VDD already enable" > /dev/kmsg
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	echo 0 > /sys/class/leds/aura_sync/mode3
+	echo 0 > /sys/class/leds/aura_sync/led_on
+	echo 1 > /sys/class/leds/aura_sync/apply2
+
+	result1=`cat /sys/class/leds/aura_sync/mode3`
+
+	if [ "$result1" -eq "0" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+
+elif [ "$CMD" -eq "1" ]; then
+	echo "$BRIGHTNESS" > /sys/class/leds/aura_sync/red3_pwm
+	echo 0 > /sys/class/leds/aura_sync/green3_pwm
+	echo 0 > /sys/class/leds/aura_sync/blue3_pwm
+	
+	echo 1 > /sys/class/leds/aura_sync/mode3
+	echo 1 > /sys/class/leds/aura_sync/led_on
+	echo 1 > /sys/class/leds/aura_sync/apply2
+
+	result=`cat /sys/class/leds/aura_sync/red3_pwm`
+	if [ "$result" -eq "$BRIGHTNESS" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+
+elif [ "$CMD" -eq "2" ]; then
+	echo 0 > /sys/class/leds/aura_sync/red3_pwm
+	echo "$BRIGHTNESS" > /sys/class/leds/aura_sync/green3_pwm
+	echo 0 > /sys/class/leds/aura_sync/blue3_pwm
+	
+	echo 1 > /sys/class/leds/aura_sync/mode3
+	echo 1 > /sys/class/leds/aura_sync/led_on
+	echo 1 > /sys/class/leds/aura_sync/apply2
+
+	result=`cat /sys/class/leds/aura_sync/green3_pwm`
+	if [ "$result" -eq "$BRIGHTNESS" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+
+elif [ "$CMD" -eq "3" ]; then
+	echo 0 > /sys/class/leds/aura_sync/red3_pwm
+	echo 0 > /sys/class/leds/aura_sync/green3_pwm
+	echo "$BRIGHTNESS" > /sys/class/leds/aura_sync/blue3_pwm
+	
+	echo 1 > /sys/class/leds/aura_sync/mode3
+	echo 1 > /sys/class/leds/aura_sync/led_on
+	echo 1 > /sys/class/leds/aura_sync/apply2
+
+	result=`cat /sys/class/leds/aura_sync/blue3_pwm`
+	if [ "$result" -eq "$BRIGHTNESS" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+
+elif [ "$CMD" -eq "4" ]; then
+	echo "$BRIGHTNESS" > /sys/class/leds/aura_sync/red3_pwm
+	echo "$BRIGHTNESS" > /sys/class/leds/aura_sync/green3_pwm
+	echo "$BRIGHTNESS" > /sys/class/leds/aura_sync/blue3_pwm
+	
+	echo 1 > /sys/class/leds/aura_sync/mode3
+	echo 1 > /sys/class/leds/aura_sync/led_on
+	echo 1 > /sys/class/leds/aura_sync/apply2
+
+	result=`cat /sys/class/leds/aura_sync/blue3_pwm`
+
+	echo 0 > /sys/class/leds/aura_sync/red3_pwm
+	echo 0 > /sys/class/leds/aura_sync/green3_pwm
+	echo 0 > /sys/class/leds/aura_sync/blue3_pwm
+
+	if [ "$result" -eq "$BRIGHTNESS" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+fi
+
+

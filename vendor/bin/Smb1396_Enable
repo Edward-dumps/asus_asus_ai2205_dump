@@ -1,0 +1,17 @@
+echo 0x2641 > /d/regmap/4-09/address
+echo 1 > /d/regmap/4-09/count
+reg=`cat /d/regmap/4-09/data`
+
+reg1=`echo "$reg" | awk '{print $1}'`
+reg2=`echo "$reg" | awk '{print $2}'`
+
+if [ "$reg1" == "2641:" ]; then
+	value=$((16#${reg2}))
+	if [ "$value" -gt "128" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+else
+	echo 0
+fi

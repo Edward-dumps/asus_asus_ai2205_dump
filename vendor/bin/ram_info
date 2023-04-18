@@ -1,0 +1,13 @@
+#!/system/bin/sh
+
+status=`getprop ro.boot.ddr.manufacturer_id`
+
+if [ "$status" -eq "ff" ]; then 
+	echo MICRON
+elif [ "$status" -eq "6" ]; then 
+	echo HYNIX
+elif [ "$status" -eq "1" ]; then 
+	echo SAMSUNG
+else 
+	echo Unknown
+fi	

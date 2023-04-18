@@ -1,0 +1,25 @@
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "Please enter NTC parameter!"
+	exit
+fi
+
+if [ "$CMD" -eq "0" ]; then
+	status=`cat /sys/bus/iio/devices/iio:device0/in_temp_pm8550b_usb_btm_input`
+elif [ "$CMD" -eq "1" ]; then
+	status=`cat /sys/bus/iio/devices/iio:device0/in_temp_pm8550_usb_side_input`
+else
+	echo "Invalid parameter!"
+	exit
+fi
+
+if [ "$status" -lt "75000" ]; then
+	if [ "$status" -gt "15000" ]; then
+		echo "PASS"
+	else
+		echo "FAIL"
+	fi
+else
+	echo "FAIL"
+fi

@@ -1,0 +1,33 @@
+#!/vendor/bin/sh
+
+# check key.xml
+if [ ! -e "/vendor/factory/key.xml" ]; then 
+	#echo "key.xml is not ready."
+	echo 0
+	return
+fi
+
+n=1
+result=0
+
+while [ $n -le 5 ]; do
+	# clear key status
+	setprop vendor.atd.keymaster.ready FALSE
+	setprop vendor.debug.check.keybox 0
+	rm -rf /mnt/vendor/persist/data/DdHdV*
+	rm -f /data/asuskey.log
+
+	# start dec_key
+	/vendor/bin/install_key_server rog7prov > /data/asuskey.log 2>&1
+	sleep 1
+	Km=`getprop vendor.atd.keymaster.ready`
+
+	if [ $Km == "TRUE" ]; then
+		result=1
+		break
+	fi
+	
+	n=$(( n+1 ))
+done
+
+echo $result

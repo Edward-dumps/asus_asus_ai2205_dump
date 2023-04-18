@@ -1,0 +1,11 @@
+FAN6_FW:0x0141
+FAN6_PD_FW:V20
+FAN6_AURA_FW:0x0503
+Aura_FW:0x0206
+gamepad3_left:V3.3.3
+gamepad3_middle:V3.1.0
+gamepad3_right:V3.1.0
+gamepad3_bt:V3.0.8
+FAN7_2LED_FW:0x0707
+FAN7_3LED_FW:0x0607
+FAN7_PD_FW:23-2-17

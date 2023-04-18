@@ -1,0 +1,29 @@
+#!/system/bin/sh
+
+status=`getprop ro.boot.id.stage`
+
+if [ "$status" -eq "13" ]; then 
+	echo EVB
+
+elif [ "$status" -eq "1" ]; then
+	echo SR1
+	
+elif [ "$status" -eq "2" ]; then
+	echo SR2
+	
+elif [ "$status" -eq "4" ]; then
+	echo ER1
+	
+elif [ "$status" -eq "8" ]; then
+	echo ER2
+	
+elif [ "$status" -eq "9" ]; then
+	echo PR
+	
+elif [ "$status" -eq "11" ]; then
+	echo MP
+
+else 
+	echo Unknown
+	
+fi	

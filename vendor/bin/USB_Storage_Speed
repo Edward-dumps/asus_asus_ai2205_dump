@@ -1,0 +1,32 @@
+usb1=a600000
+usb2=a800000
+test_usb=all
+
+if [ ! -n "$1" ]; then
+	test_usb=all
+else
+	if [ $1 == 1 ]; then
+		test_usb=$usb1
+	elif [ $1 == 2 ]; then
+		test_usb=$usb2
+	else
+		test_usb=all
+	fi
+fi
+
+usb_path=/sys/bus/usb/devices
+list=`ls $usb_path| grep -vE ":|usb"`
+result=0
+
+for i in $list
+do
+	speed=`cat /sys/bus/usb/devices/$i/speed` > /dev/null 2>&1
+	if [ $i != null ]; then
+		path=`ls -l /sys/bus/usb/devices/$i` > /dev/null 2>&1
+		if [ $test_usb == all ]; then
+			echo $speed
+		elif [[ $path == *$test_usb* ]]; then
+			echo $speed
+		fi
+	fi
+done

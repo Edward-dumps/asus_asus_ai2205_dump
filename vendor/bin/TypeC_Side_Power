@@ -1,0 +1,40 @@
+#!/vendor/bin/sh
+
+if [ "$#" -ge 2 ]; then
+	echo "Parameter not avalid!"
+	echo 0
+	exit
+fi
+
+if [ -n "$1" ]; then
+	export CMD=$1
+else
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (on)"
+	exit
+fi
+
+if [ "$CMD" != "0" ] && [ "$CMD" != "1" ]; then
+	echo "CMD not assigned !"
+	echo " 0 (Off), 1 (on)"
+	exit
+fi
+
+if [ "$CMD" == "1" ]; then
+	echo 1 > /sys/bus/platform/drivers/rog_accy/soc:rog_accy/VPH_CTRL
+	result=`cat /sys/bus/platform/drivers/rog_accy/soc:rog_accy/VPH_CTRL`
+	if [ "$result" == "1" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+else
+	echo 0 > /sys/bus/platform/drivers/rog_accy/soc:rog_accy/VPH_CTRL
+	result=`cat /sys/bus/platform/drivers/rog_accy/soc:rog_accy/VPH_CTRL`
+	if [ "$result" == "0" ]; then
+		echo 1
+	else
+		echo 0
+	fi
+fi 
+

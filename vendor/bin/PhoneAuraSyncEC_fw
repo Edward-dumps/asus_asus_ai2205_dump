@@ -1,0 +1,13 @@
+#!/vendor/bin/sh
+
+VDD=`cat /sys/class/leds/aura_sync/VDD`
+
+if [ "${VDD}" == "0" ]; then
+    echo "[AURA_MS51] Enable VDD" > /dev/kmsg
+    echo 1 > /sys/class/leds/aura_sync/VDD
+    sleep 1
+else
+    echo "[AURA_MS51] VDD already enable" > /dev/kmsg
+fi
+
+cat /sys/class/leds/aura_sync/fw_ver

@@ -1,0 +1,28 @@
+#!/system/bin/sh
+#ASUS_BSP code in asus_actuator.c
+
+vcm_enable=`cat /proc/driver/vcm_enable`
+
+i=0
+if [ ${vcm_enable} -eq "1" ]; then
+
+
+	vcm_FW_1=`echo 0x3d > /proc/driver/vcm_ic_rw; cat /proc/driver/vcm_ic_rw`
+
+	#echo $vcm_FW_1
+	#echo ${vcm_FW_1:15:18}
+
+	vcm_FW_2=`echo 0x3e > /proc/driver/vcm_ic_rw; cat /proc/driver/vcm_ic_rw`
+	#echo $vcm_FW_2
+	#echo ${vcm_FW_2:15:18}
+
+	if [ ${vcm_FW_1:15:18} == "0x7" ] && [ ${vcm_FW_2:15:18} == "0x9" ]; then
+		echo "1"
+	else
+		echo "0"
+	fi
+
+else
+	echo "vcm not enable"
+fi
+

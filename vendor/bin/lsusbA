@@ -1,0 +1,1 @@
+cd /sys/bus/usb/devices/; for i in $(ls | grep -v :); do echo $i\\t[`cat $i/idVendor`:`cat $i/idProduct`]: `cat $i/product` [`cat $i/speed`]; done; cd ->/dev/null

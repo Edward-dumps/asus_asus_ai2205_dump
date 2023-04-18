@@ -1,0 +1,16 @@
+#!/system/bin/sh
+
+status=`getprop ro.boot.id.prj`
+
+if [ "$status" -eq "0" ]; then 
+    echo AI2205_Entry
+
+elif [ "$status" -eq "1" ]; then
+    echo AI2205_Pro
+
+elif [ "$status" -eq "2" ]; then
+    echo AI2205_Ultimate
+ 
+else 
+	echo Unknown
+fi

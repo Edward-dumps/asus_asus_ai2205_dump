@@ -1,0 +1,21 @@
+if [ $1 -eq "1" ]; then
+    echo 1 > /sys/class/asuslib/POGO_OTG_EN
+    sleep 0.05
+    status=`cat /sys/class/asuslib/POGO_OTG_EN`
+    if [ "$status" -eq "1" ]; then
+	echo PASS
+    else
+	echo FAIL
+    fi
+elif [ $1 -eq "0" ]; then
+    echo 0 > /sys/class/asuslib/POGO_OTG_EN
+    sleep 0.05
+    status=`cat /sys/class/asuslib/POGO_OTG_EN`
+    if [ "$status" -eq "0" ]; then
+	echo PASS
+    else
+	echo FAIL
+    fi
+else
+    echo "Invalid value!"
+fi
